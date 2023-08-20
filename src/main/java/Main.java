@@ -1,5 +1,3 @@
-import java.util.UUID;
-
 public class Main {
     public static void main(String[] args) {
         Toy firstToy = new Toy("First", 0.35);

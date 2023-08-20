@@ -1,6 +1,6 @@
 import java.util.UUID;
 
-public class Toy {
+public class Toy implements Comparable<Toy>{
     private final String id;
     private String name;
     private Double frequencyOfLoss;
@@ -36,10 +36,11 @@ public class Toy {
 
     @Override
     public String toString() {
-        return "Toy{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", frequencyOfLoss=" + frequencyOfLoss +
-                '}';
+        return String.format("id:%s %s, вероятность выпадения:%.1f", this.id, this.name, this.frequencyOfLoss);
+    }
+
+    @Override
+    public int compareTo(Toy o) {
+        return getFrequencyOfLoss().compareTo(o.getFrequencyOfLoss());
     }
 }
