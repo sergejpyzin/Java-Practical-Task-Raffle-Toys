@@ -2,16 +2,44 @@ import java.util.Scanner;
 
 public class UserInteraction {
 
-    public int checkingIntMassage(String massage) {
+    public static int checkingUserAnswerForInt(String massage) {
         Scanner scanner = new Scanner(System.in);
-        String userAnswer = scanner.next();
-        int number = 0;
-        try {
-           number = Integer.parseInt(userAnswer);
-           
-        } catch (NumberFormatException e){
-            System.out.println("Введенное значение не число " + e.getMessage());
-        }
-        return number;
+        System.out.println(massage);
+        boolean flag = false;
+        int userAnswer = 0;
+        do {
+            try {
+                userAnswer = Integer.parseInt(scanner.next());
+                flag = true;
+            } catch (NumberFormatException e) {
+                System.out.println("Введенное значение не число ");
+            }
+        } while (!flag);
+        return userAnswer;
     }
+
+    public static double checkingUserAnswerForDouble(String massage) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(massage);
+        boolean flag = false;
+        double userAnswer = 0;
+        do {
+            try {
+                userAnswer = Double.parseDouble(scanner.next());
+                flag = true;
+            } catch (NumberFormatException e) {
+                System.out.println("Введенное значение не число ");
+            }
+        } while (!flag);
+        return userAnswer;
+    }
+
+    public static boolean isNotEmpty(String userAnswer){
+        if (userAnswer.length() == 0){
+            return false;
+        }
+        return true;
+    }
+
+
 }
