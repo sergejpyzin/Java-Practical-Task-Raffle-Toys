@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed FileIO">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="renamed ToyList as ToyService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ToyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692860304189</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="changed all files">
+      <created>1693119393230</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693119393230</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed ToyList and deleted MyUuidApp.java">
+      <created>1693119480297</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693119480297</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +162,9 @@
     <MESSAGE value="changed ToyList as added hashmap" />
     <MESSAGE value="created FileIO" />
     <MESSAGE value="changed FileIO" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed FileIO" />
+    <MESSAGE value="changed all files" />
+    <MESSAGE value="changed ToyList and deleted MyUuidApp.java" />
+    <MESSAGE value="renamed ToyList as ToyService" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed ToyList as ToyService" />
   </component>
 </project>
