@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed FileIO as optimized import" />
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as added List method">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693207287669</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="changed ToyService as added List method">
+      <created>1693208825898</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1693208825898</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +236,7 @@
     <MESSAGE value="changed FileIO as crated is writeFile method" />
     <MESSAGE value="changed FileIO as changed is writeFile method" />
     <MESSAGE value="changed FileIO as optimized import" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed FileIO as optimized import" />
+    <MESSAGE value="changed ToyService as added List method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as added List method" />
   </component>
 </project>

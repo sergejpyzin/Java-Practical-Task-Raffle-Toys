@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Toy firstToy = new Toy("First", 0.35);
+        /*Toy firstToy = new Toy("First", 0.35);
         Toy secondToy = new Toy("Second", 0.35);
         Toy thirdToy = new Toy();
 
@@ -17,10 +17,10 @@ public class Main {
         toys.add(thirdToy);
         toys.add(new Toy("Four", 0.22));
         toys.add(new Toy("Five", 0.66));
-        FileIO.writeFile(toys);
+        FileIO.writeFile(toys);*/
 
+        double number = UserInteraction.checkingUserAnswerForInt("Введите число: ");
+        System.out.println(number);
     }
-        /*double number = UserInteraction.checkingUserAnswerForDouble("Введите число: ");
-        System.out.println(number);*/
 
 }
