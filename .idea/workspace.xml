@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInteraction as changed checkingUserAnswerForInt method">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as changed toysList method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +245,28 @@
       <option name="project" value="LOCAL" />
       <updated>1693223025306</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="changed UserInteraction as deleted isNotEmptyAnswerUser method">
+      <created>1693223692354</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1693223692354</updated>
+    </task>
+    <task id="LOCAL-00027" summary="changed UserInteraction as deleted isNotEmptyAnswerUser method">
+      <created>1693223713412</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1693223713412</updated>
+    </task>
+    <task id="LOCAL-00028" summary="changed ToyService as changed toysList method">
+      <created>1693223760067</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1693223760067</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,8 +281,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed MyUuidApp.java" />
-    <MESSAGE value="changed Main.java and Toy.java as added getter, setter and constructor" />
     <MESSAGE value="changed Toy.java as create compareTo" />
     <MESSAGE value="create ToyList" />
     <MESSAGE value="changed ToyList as added hashmap" />
@@ -284,6 +304,8 @@
     <MESSAGE value="changed UserInteraction as renamed checkingUserAnswer as checkingUserAnswerFromEmpty and changed checkingUserAnswerFromEmpty method" />
     <MESSAGE value="changed UserInteraction as changed checkingUserAnswerForDouble method" />
     <MESSAGE value="changed UserInteraction as changed checkingUserAnswerForInt method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed UserInteraction as changed checkingUserAnswerForInt method" />
+    <MESSAGE value="changed UserInteraction as deleted isNotEmptyAnswerUser method" />
+    <MESSAGE value="changed ToyService as changed toysList method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as changed toysList method" />
   </component>
 </project>

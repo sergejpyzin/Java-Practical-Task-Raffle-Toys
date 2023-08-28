@@ -48,5 +48,4 @@ public class UserInteraction {
         } while (!flag);
         return userAnswer;
     }
-
 }

@@ -20,8 +20,13 @@ public class Main {
         FileIO.writeFile(toys);*/
 
 
-        int number = UserInteraction.checkingUserAnswerForInt("Введите число: ");
-        System.out.println(number);
+        /*int number = UserInteraction.checkingUserAnswerForInt("Введите число: ");
+        System.out.println(number);*/
+        ToyService toyService = new ToyService();
+        List<Toy> toys = toyService.toysList();
+        System.out.println(toys);
+        /*double number = UserInteraction.checkingUserAnswerForDouble("222");
+        System.out.println(number);*/
     }
 
 }
