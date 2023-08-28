@@ -48,7 +48,7 @@ public class UserInteraction {
     public static String checkingUserAnswer(String massage){
         Scanner scanner = new Scanner(System.in);
         System.out.println(massage);
-        String userAnswer = "";
+        String userAnswer;
         String parseAnswer = scanner.nextLine();
         if (parseAnswer.isEmpty()){
 
