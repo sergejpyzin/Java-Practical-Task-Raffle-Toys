@@ -16,6 +16,7 @@ public class Main {
         toys.add(secondToy);
         toys.add(thirdToy);
         toys.add(new Toy("Four", 0.22));
+        toys.add(new Toy("Five", 0.66));
         FileIO.writeFile(toys);
 
     }
