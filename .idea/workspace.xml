@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as changed toysList method and changed Toy as toString method" />
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="Non changed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -268,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693225836083</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Non changed">
+      <created>1693227210959</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1693227210959</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +293,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create ToyList" />
     <MESSAGE value="changed ToyList as added hashmap" />
     <MESSAGE value="created FileIO" />
     <MESSAGE value="changed FileIO" />
@@ -308,6 +317,7 @@
     <MESSAGE value="changed UserInteraction as deleted isNotEmptyAnswerUser method" />
     <MESSAGE value="changed ToyService as changed toysList method" />
     <MESSAGE value="changed ToyService as changed toysList method and changed Toy as toString method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as changed toysList method and changed Toy as toString method" />
+    <MESSAGE value="Non changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Non changed" />
   </component>
 </project>

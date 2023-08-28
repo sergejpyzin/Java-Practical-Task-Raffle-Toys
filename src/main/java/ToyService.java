@@ -23,12 +23,37 @@ public class ToyService {
                     "'кол-во наименование вероятность выпадения'");
             String[] splitString = userAnswer.split(" ");
             int count = Integer.parseInt(splitString[0]);
+            String name = splitString[1];
+            double frequencyOfLoss = Double.parseDouble(splitString[2]);
             for (int i = 0; i < count; i++) {
-                toys.add(new Toy(splitString[1], Double.parseDouble(splitString[2])));
+                toys.add(new Toy(name, frequencyOfLoss));
             }
             size -=count;
         }
         return toys;
+    }
+
+    private int parseInt (String[] someString){
+        int number = 0;
+        try{
+            number = Integer.parseInt(someString[0]);
+        }catch (NumberFormatException e){
+            System.out.println(e.getMessage());
+        }
+        return number;
+    }
+
+    private double parseDouble(String [] someString){
+        double number = 0;
+        try{
+            number = Double.parseDouble(someString[3]);
+        }catch (NumberFormatException e){
+            System.out.println(e.getMessage());
+        }
+        return number;
+    }
+    private boolean isSize (String [] someString){
+        return someString.length == 3;
     }
 
 
