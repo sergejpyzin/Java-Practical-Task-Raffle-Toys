@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed FileIO as crated is writeFile method">
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
-    </list>
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed FileIO as optimized import" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693207136428</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="changed FileIO as changed is writeFile method">
+      <created>1693207258120</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1693207258120</updated>
+    </task>
+    <task id="LOCAL-00018" summary="changed FileIO as optimized import">
+      <created>1693207287669</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1693207287669</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +224,8 @@
     <MESSAGE value="changed UserInteraction as added checkingUserAnswerForInt, checkingUserAnswerForDouble, isNotEmpty  methods" />
     <MESSAGE value="changed UserInteraction as deleted isNotEmpty method" />
     <MESSAGE value="changed FileIO as crated is writeFile method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed FileIO as crated is writeFile method" />
+    <MESSAGE value="changed FileIO as changed is writeFile method" />
+    <MESSAGE value="changed FileIO as optimized import" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed FileIO as optimized import" />
   </component>
 </project>
