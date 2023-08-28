@@ -17,7 +17,9 @@ public class ToyService{
     public List<Toy> toysList(){
         List<Toy> toys = new ArrayList<>();
         int size = UserInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:\n");
+        for (int i = 0; i < size; i++) {
 
+        }
         return toys;
     }
 
