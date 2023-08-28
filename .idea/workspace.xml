@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInteraction as added checkingUserAnswerForInt, checkingUserAnswerForDouble, isNotEmpty  methods">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInteraction as deleted isNotEmpty method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693151940837</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="changed UserInteraction as deleted isNotEmpty method">
+      <created>1693205597278</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1693205597278</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +205,7 @@
     <MESSAGE value="ctreated UserInteraction" />
     <MESSAGE value="changed UserInteraction as added checkingIntMassage method" />
     <MESSAGE value="changed UserInteraction as added checkingUserAnswerForInt, checkingUserAnswerForDouble, isNotEmpty  methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed UserInteraction as added checkingUserAnswerForInt, checkingUserAnswerForDouble, isNotEmpty  methods" />
+    <MESSAGE value="changed UserInteraction as deleted isNotEmpty method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed UserInteraction as deleted isNotEmpty method" />
   </component>
 </project>
