@@ -49,11 +49,4 @@ public class UserInteraction {
         return userAnswer;
     }
 
-    public boolean isNotEmptyAnswerUser(String answerUser) {
-        if (answerUser.isEmpty()) {
-            return false;
-        } else {
-            return true;
-        }
-    }
 }
