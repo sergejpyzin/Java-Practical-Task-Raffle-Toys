@@ -45,14 +45,20 @@ public class UserInteraction {
         return parseAnswer;
     }
 
-    public static String checkingUserAnswer(String massage){
+    public static String checkingUserAnswerFromEmpty(String massage) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(massage);
-        String userAnswer;
-        String parseAnswer = scanner.nextLine();
-        if (parseAnswer.isEmpty()){
-
-        }
+        String userAnswer = null;
+        boolean flag = false;
+        do {
+            System.out.println(massage);
+            String parseAnswer = scanner.nextLine();
+            if (parseAnswer.isEmpty()) {
+                System.out.println("Ответ на запрос не может быть пустым! Попробуйте еще раз.");
+            } else {
+                userAnswer = parseAnswer;
+                flag = true;
+            }
+        } while (!flag);
         return userAnswer;
     }
 }

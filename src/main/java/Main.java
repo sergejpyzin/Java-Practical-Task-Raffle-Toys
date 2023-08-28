@@ -19,8 +19,11 @@ public class Main {
         toys.add(new Toy("Five", 0.66));
         FileIO.writeFile(toys);*/
 
-        double number = UserInteraction.checkingUserAnswerForInt("Введите число: ");
-        System.out.println(number);
+       /* double number = UserInteraction.checkingUserAnswerForDouble("Введите число: ");
+        int number2 = UserInteraction.checkingUserAnswerForInt("Введите число: ");*/
+        String str = UserInteraction.checkingUserAnswer("введите слово:");
+//        System.out.println(number + "\t" + number2);
+        System.out.println(str);
     }
 
 }
