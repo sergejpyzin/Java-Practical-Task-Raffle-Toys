@@ -44,4 +44,15 @@ public class UserInteraction {
         } while (!flag);
         return parseAnswer;
     }
+
+    public static String checkingUserAnswer(String massage){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(massage);
+        String userAnswer = "";
+        String parseAnswer = scanner.nextLine();
+        if (parseAnswer.isEmpty()){
+
+        }
+        return userAnswer;
+    }
 }

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as added List method">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInteraction as changed checkingUserAnswerForInt and checkingUserAnswerForDouble methods">
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693208825898</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="changed UserInteraction as changed checkingUserAnswerForInt and checkingUserAnswerForDouble methods">
+      <created>1693209685378</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1693209685378</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +243,7 @@
     <MESSAGE value="changed FileIO as changed is writeFile method" />
     <MESSAGE value="changed FileIO as optimized import" />
     <MESSAGE value="changed ToyService as added List method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as added List method" />
+    <MESSAGE value="changed UserInteraction as changed checkingUserAnswerForInt and checkingUserAnswerForDouble methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed UserInteraction as changed checkingUserAnswerForInt and checkingUserAnswerForDouble methods" />
   </component>
 </project>
