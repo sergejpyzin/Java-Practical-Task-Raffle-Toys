@@ -33,13 +33,4 @@ public class UserInteraction {
         } while (!flag);
         return userAnswer;
     }
-
-    public static boolean isNotEmpty(String userAnswer){
-        if (userAnswer.length() == 0){
-            return false;
-        }
-        return true;
-    }
-
-
 }
