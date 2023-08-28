@@ -12,7 +12,7 @@ public class UserInteraction {
                 String userAnswer = scanner.nextLine();
                 if (userAnswer.isEmpty()) {
                     System.out.println("Ответ на запрос не может быть пустым! Попробуйте еще раз.");
-                }else{
+                } else {
                     parseAnswer = Integer.parseInt(userAnswer);
                     flag = true;
                 }
@@ -24,20 +24,13 @@ public class UserInteraction {
     }
 
     public static double checkingUserAnswerForDouble(String massage) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(massage);
         boolean flag = false;
         double parseAnswer = 0;
         do {
             try {
-                System.out.println(massage);
-                String userAnswer = scanner.nextLine();
-                if (userAnswer.isEmpty()) {
-                    System.out.println("Ответ на запрос не может быть пустым! Попробуйте еще раз.");
-                }else{
-                    parseAnswer = Double.parseDouble(userAnswer);
-                    flag = true;
-                }
+                String checkAnswer = checkingUserAnswerFromEmpty(massage);
+                parseAnswer = Double.parseDouble(checkAnswer);
+                flag = true;
             } catch (NumberFormatException e) {
                 System.out.println("Введенное значение не число ");
             }
@@ -60,5 +53,13 @@ public class UserInteraction {
             }
         } while (!flag);
         return userAnswer;
+    }
+
+    public boolean isNotEmptyAnswerUser(String answerUser) {
+        if (answerUser.isEmpty()) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }

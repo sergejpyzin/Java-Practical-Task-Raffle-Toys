@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInteraction as changed checkingUserAnswer methods">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInteraction as renamed checkingUserAnswer as checkingUserAnswerFromEmpty and changed checkingUserAnswerFromEmpty method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
@@ -223,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693209957047</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="changed UserInteraction as renamed checkingUserAnswer as checkingUserAnswerFromEmpty and changed checkingUserAnswerFromEmpty method">
+      <created>1693212401368</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1693212401368</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +269,7 @@
     <MESSAGE value="changed UserInteraction as changed checkingUserAnswerForInt and checkingUserAnswerForDouble methods" />
     <MESSAGE value="changed UserInteraction as created checkingUserAnswer methods" />
     <MESSAGE value="changed UserInteraction as changed checkingUserAnswer methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed UserInteraction as changed checkingUserAnswer methods" />
+    <MESSAGE value="changed UserInteraction as renamed checkingUserAnswer as checkingUserAnswerFromEmpty and changed checkingUserAnswerFromEmpty method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed UserInteraction as renamed checkingUserAnswer as checkingUserAnswerFromEmpty and changed checkingUserAnswerFromEmpty method" />
   </component>
 </project>

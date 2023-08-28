@@ -21,9 +21,10 @@ public class Main {
 
        /* double number = UserInteraction.checkingUserAnswerForDouble("Введите число: ");
         int number2 = UserInteraction.checkingUserAnswerForInt("Введите число: ");*/
-        String str = UserInteraction.checkingUserAnswer("введите слово:");
+//        String str = UserInteraction.checkingUserAnswerFromEmpty("введите слово:");
 //        System.out.println(number + "\t" + number2);
-        System.out.println(str);
+        double number2 = UserInteraction.checkingUserAnswerForDouble("Введите число: ");
+        System.out.println(number2);
     }
 
 }
