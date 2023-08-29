@@ -17,7 +17,7 @@ public class ToyService {
 
     public List<Toy> toysList() {
         List<Toy> toys = new ArrayList<>();
-        int size = UserInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:\n");
+        int size = UserInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
         while (size > 0) {
             String userAnswer = UserInteraction.checkingUserAnswerFromEmpty("Введите игрушку для розыгрыша в формате " +
                     "'кол-во наименование вероятность выпадения'");
@@ -26,14 +26,25 @@ public class ToyService {
                 String name = splitString[1];
                 int count = parseInt(splitString);
                 double frequencyOfLoss = parseDouble(splitString);
+                int temp = size;
+                int countPlace = size - count;
+                size = countPlace;
+                System.out.println("ВНИМАНИЕ! Осталось мест для игрушек - " + size);
+                if (countPlace < 0){
+                    System.out.println("Количество игрушек превышает максимально возможное. Будет добавлено - " + temp);
+                    count = temp;
+                }
                 for (int i = 0; i < count; i++) {
                     toys.add(new Toy(name, frequencyOfLoss));
                 }
-                size -= count;
-            } else toysList();
+            } else {
+                System.out.println("Внимание! Ошибка формата ввода. ");
+                toysList();
+            }
         }
         return toys;
-    }
+
+}
 
     private int parseInt(String[] someString) {
         int number = 0;
@@ -50,12 +61,16 @@ public class ToyService {
     }
 
     private double parseDouble(String[] someString) {
+        boolean flag = false;
         double number = 0;
-        try {
-            number = Double.parseDouble(someString[3]);
-        } catch (NumberFormatException e) {
-            System.out.println(e.getMessage());
-        }
+        do {
+            try {
+                number = Double.parseDouble(someString[2].replace(",", "."));
+                flag = true;
+            } catch (NumberFormatException e) {
+                System.out.println(e.getMessage());
+            }
+        } while (!flag);
         return number;
     }
 

@@ -25,6 +25,7 @@ public class Main {
         ToyService toyService = new ToyService();
         List<Toy> toys = toyService.toysList();
         System.out.println(toys);
+        FileIO.writeFile(toys);
         /*double number = UserInteraction.checkingUserAnswerForDouble("222");
         System.out.println(number);*/
     }
