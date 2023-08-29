@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="Non changed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
-    </list>
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as created parseInt, parseDouble, isSize methods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -278,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693227210959</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="changed ToyService as created parseInt, parseDouble, isSize methods">
+      <created>1693246825593</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1693246825593</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +297,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed ToyList as added hashmap" />
     <MESSAGE value="created FileIO" />
     <MESSAGE value="changed FileIO" />
     <MESSAGE value="changed all files" />
@@ -318,6 +321,7 @@
     <MESSAGE value="changed ToyService as changed toysList method" />
     <MESSAGE value="changed ToyService as changed toysList method and changed Toy as toString method" />
     <MESSAGE value="Non changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Non changed" />
+    <MESSAGE value="changed ToyService as created parseInt, parseDouble, isSize methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as created parseInt, parseDouble, isSize methods" />
   </component>
 </project>

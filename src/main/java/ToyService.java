@@ -22,13 +22,15 @@ public class ToyService {
             String userAnswer = UserInteraction.checkingUserAnswerFromEmpty("Введите игрушку для розыгрыша в формате " +
                     "'кол-во наименование вероятность выпадения'");
             String[] splitString = userAnswer.split(" ");
-            int count = Integer.parseInt(splitString[0]);
-            String name = splitString[1];
-            double frequencyOfLoss = Double.parseDouble(splitString[2]);
-            for (int i = 0; i < count; i++) {
-                toys.add(new Toy(name, frequencyOfLoss));
-            }
-            size -=count;
+            if (isSize(splitString)){
+                String name = splitString[1];
+                int count = parseInt(splitString);
+                double frequencyOfLoss = parseDouble(splitString);
+                for (int i = 0; i < count; i++) {
+                    toys.add(new Toy(name, frequencyOfLoss));
+                }
+                size -=count;
+            } else toysList();
         }
         return toys;
     }
