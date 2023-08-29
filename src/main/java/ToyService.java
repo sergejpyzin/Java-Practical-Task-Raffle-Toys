@@ -22,39 +22,44 @@ public class ToyService {
             String userAnswer = UserInteraction.checkingUserAnswerFromEmpty("Введите игрушку для розыгрыша в формате " +
                     "'кол-во наименование вероятность выпадения'");
             String[] splitString = userAnswer.split(" ");
-            if (isSize(splitString)){
+            if (isSize(splitString)) {
                 String name = splitString[1];
                 int count = parseInt(splitString);
                 double frequencyOfLoss = parseDouble(splitString);
                 for (int i = 0; i < count; i++) {
                     toys.add(new Toy(name, frequencyOfLoss));
                 }
-                size -=count;
+                size -= count;
             } else toysList();
         }
         return toys;
     }
 
-    private int parseInt (String[] someString){
+    private int parseInt(String[] someString) {
         int number = 0;
-        try{
-            number = Integer.parseInt(someString[0]);
-        }catch (NumberFormatException e){
+        boolean flag = false;
+        do {
+            try {
+                number = Integer.parseInt(someString[0]);
+                flag = true;
+            } catch (NumberFormatException e) {
+                System.out.println(e.getMessage());
+            }
+        } while (!flag);
+        return number;
+    }
+
+    private double parseDouble(String[] someString) {
+        double number = 0;
+        try {
+            number = Double.parseDouble(someString[3]);
+        } catch (NumberFormatException e) {
             System.out.println(e.getMessage());
         }
         return number;
     }
 
-    private double parseDouble(String [] someString){
-        double number = 0;
-        try{
-            number = Double.parseDouble(someString[3]);
-        }catch (NumberFormatException e){
-            System.out.println(e.getMessage());
-        }
-        return number;
-    }
-    private boolean isSize (String [] someString){
+    private boolean isSize(String[] someString) {
         return someString.length == 3;
     }
 
