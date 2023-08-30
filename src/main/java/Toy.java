@@ -41,6 +41,6 @@ public class Toy implements Comparable<Toy>{
 
     @Override
     public int compareTo(Toy o) {
-        return this.name.compareTo(o.name);
+        return this.frequencyOfLoss.compareTo(o.frequencyOfLoss);
     }
 }
