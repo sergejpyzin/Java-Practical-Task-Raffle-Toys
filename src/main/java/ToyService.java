@@ -19,8 +19,12 @@ public class ToyService {
         List<Toy> toys = new ArrayList<>();
         int size = UserInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
         while (size > 0) {
-            String userAnswer = UserInteraction.checkingUserAnswerFromEmpty("Введите игрушку для розыгрыша в формате " +
-                    "'кол-во наименование вероятность выпадения'");
+            String userAnswer = UserInteraction.checkingUserAnswerFromEmpty(
+                    """
+                    Введите игрушки для розыграша в формате:
+                    'кол-во игрушек наименование шанс выпадения в процентах'
+                    Пример: 2 конструктор 30
+                    """);
             String[] splitString = userAnswer.split(" ");
             if (isSize(splitString)) {
                 String name = splitString[1];
@@ -29,9 +33,9 @@ public class ToyService {
                 int temp = size;
                 int countPlace = size - count;
                 size = countPlace;
-                System.out.println("ВНИМАНИЕ! Осталось мест для игрушек - " + size);
+                System.out.println("ВНИМАНИЕ! Осталось мест в списке для розыграша - " + size);
                 if (countPlace < 0){
-                    System.out.println("Количество игрушек превышает максимально возможное. Будет добавлено - " + temp);
+                    System.out.println("Количество игрушек превышает максимально возможное. Будет добавлено игрушек " + name + " - " + temp);
                     count = temp;
                 }
                 for (int i = 0; i < count; i++) {

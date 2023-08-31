@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class Main {
     public static void main(String[] args) {
-        Toy firstToy = new Toy("First", 0.35);
+        Toy firstToy = new Toy("First", 0.65);
         Toy secondToy = new Toy("Second", 0.35);
         Toy thirdToy = new Toy();
 
@@ -33,11 +33,14 @@ public class Main {
         for (Toy toy: toys ) {
             System.out.println(toy);
         }
+        System.out.println("=========================================================");
         List<Toy> testQueue = new ArrayList<>();
         PriorityQueue<Toy> priorityQueue = new PriorityQueue<>(toys);
         while(!priorityQueue.isEmpty()){
-            System.out.println(priorityQueue.poll());
+            testQueue.add(priorityQueue.poll());
+
         }
+        FileIO.writeFile(testQueue);
         /*for (int i = 0; i < 5; i++) {
             testQueue.add(priorityQueue.poll());
         }
