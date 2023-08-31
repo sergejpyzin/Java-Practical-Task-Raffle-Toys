@@ -6,6 +6,7 @@ import java.util.PriorityQueue;
 public class ToyService {
 
     UserInteraction userInteraction = new UserInteraction();
+    FileIO fileIO = new FileIO();
 
     public void showToys(List<Toy> toyList) {
         if (toyList.isEmpty()) {
@@ -57,7 +58,7 @@ public class ToyService {
         while (!raffle.isEmpty()){
             toyRaffle.add(raffle.poll());
         }
-        FileIO.writeFile(toyRaffle, "testTwo");
+        fileIO.writeFile(toyRaffle, "testTwo");
     }
 
     private int parseInt(String[] someString) {
