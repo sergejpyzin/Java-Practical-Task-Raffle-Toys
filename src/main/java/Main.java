@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,19 +30,19 @@ public class Main {
 //        ToyService toyService = new ToyService();
 //        toyService.toysList();
 //        System.out.println("=========================================================");
-        /*List<Toy> test = new ArrayList<>(new ToyService().toysList());
+        ToyService toyService = new ToyService();
+        List<Toy> test = toyService.toysList();
         List<Toy> testQueue = new ArrayList<>();
         PriorityQueue<Toy> priorityQueue = new PriorityQueue<>(test);
         while(!priorityQueue.isEmpty()){
             testQueue.add(priorityQueue.poll());
 
         }
-        FileIO.writeFile(testQueue);*/
-        /*for (int i = 0; i < 5; i++) {
+        FileIO.writeFile(testQueue);
+        for (int i = 0; i < 5; i++) {
             testQueue.add(priorityQueue.poll());
         }
-        System.out.println(testQueue);*/
-        ToyService toyService = new ToyService();
+        System.out.println(testQueue);
         toyService.showToys(toys);
     }
 

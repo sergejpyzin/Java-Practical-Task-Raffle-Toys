@@ -47,8 +47,8 @@ public class ToyService {
                 toysList();
             }
         }
-        return toys;
 
+        return toys;
     }
 
     private int parseInt(String[] someString) {
