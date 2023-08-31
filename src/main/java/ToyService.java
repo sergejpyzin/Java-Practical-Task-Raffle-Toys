@@ -5,6 +5,8 @@ import java.util.PriorityQueue;
 
 public class ToyService {
 
+    UserInteraction userInteraction = new UserInteraction();
+
     public void showToys(List<Toy> toyList) {
         if (toyList.isEmpty()) {
             System.out.println("Список игрушек пуст");
@@ -16,9 +18,9 @@ public class ToyService {
 
     public List<Toy> toysList() {
         List<Toy> toys = new ArrayList<>();
-        int size = UserInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
+        int size = userInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
         while (size > 0) {
-            String userAnswer = UserInteraction.checkingUserAnswerFromEmpty(
+            String userAnswer = userInteraction.checkingUserAnswerFromEmpty(
                     """
                             Введите игрушки для розыграша в формате:
                             'кол-во игрушек наименование шанс выпадения в процентах'
