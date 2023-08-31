@@ -30,22 +30,23 @@ public class Main {
         /*double number = UserInteraction.checkingUserAnswerForDouble("222");
         System.out.println(number);*/
 //        Collections.sort(toys);
-        for (Toy toy: toys ) {
-            System.out.println(toy);
-        }
-        System.out.println("=========================================================");
+//        ToyService toyService = new ToyService();
+//        toyService.toysList();
+//        System.out.println("=========================================================");
+        /*List<Toy> test = new ArrayList<>(new ToyService().toysList());
         List<Toy> testQueue = new ArrayList<>();
-        PriorityQueue<Toy> priorityQueue = new PriorityQueue<>(toys);
+        PriorityQueue<Toy> priorityQueue = new PriorityQueue<>(test);
         while(!priorityQueue.isEmpty()){
             testQueue.add(priorityQueue.poll());
 
         }
-        FileIO.writeFile(testQueue);
+        FileIO.writeFile(testQueue);*/
         /*for (int i = 0; i < 5; i++) {
             testQueue.add(priorityQueue.poll());
         }
         System.out.println(testQueue);*/
-
+        ToyService toyService = new ToyService();
+        toyService.showToys(toys);
     }
 
 }

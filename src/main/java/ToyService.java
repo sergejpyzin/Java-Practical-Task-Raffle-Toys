@@ -6,7 +6,8 @@ public class ToyService {
 
     List<Toy> toyList = new ArrayList<>();
 
-    public void showToys() {
+    //
+    public void showToys(List<Toy> toyList) {
         if (toyList.isEmpty()) {
             System.out.println("Список игрушек пуст");
         } else {
@@ -21,10 +22,10 @@ public class ToyService {
         while (size > 0) {
             String userAnswer = UserInteraction.checkingUserAnswerFromEmpty(
                     """
-                    Введите игрушки для розыграша в формате:
-                    'кол-во игрушек наименование шанс выпадения в процентах'
-                    Пример: 2 конструктор 30
-                    """);
+                            Введите игрушки для розыграша в формате:
+                            'кол-во игрушек наименование шанс выпадения в процентах'
+                            Пример: 2 конструктор 30
+                            """);
             String[] splitString = userAnswer.split(" ");
             if (isSize(splitString)) {
                 String name = splitString[1];
@@ -34,7 +35,7 @@ public class ToyService {
                 int countPlace = size - count;
                 size = countPlace;
                 System.out.println("ВНИМАНИЕ! Осталось мест в списке для розыграша - " + size);
-                if (countPlace < 0){
+                if (countPlace < 0) {
                     System.out.println("Количество игрушек превышает максимально возможное. Будет добавлено игрушек " + name + " - " + temp);
                     count = temp;
                 }
@@ -48,7 +49,7 @@ public class ToyService {
         }
         return toys;
 
-}
+    }
 
     private int parseInt(String[] someString) {
         int number = 0;
