@@ -4,9 +4,9 @@ import java.util.List;
 
 public class FileIO {
 
-    public static void writeFile(List<Toy> toyList){
+    public static void writeFile(List<Toy> toyList, String pathFile){
         try {
-            FileWriter fileWriter = new FileWriter("test.txt");
+            FileWriter fileWriter = new FileWriter(pathFile);
             for (Toy toy:toyList) {
                 fileWriter.write(toy.toString() + "\n");
             }
