@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="testing raffle method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="crated UserInterface" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -354,7 +352,28 @@
       <option name="project" value="LOCAL" />
       <updated>1693468233770</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="remove static in UserInteraction and related problem">
+      <created>1693484906765</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1693484906765</updated>
+    </task>
+    <task id="LOCAL-00043" summary="remove static in FileIO and related problem">
+      <created>1693485052545</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1693485052545</updated>
+    </task>
+    <task id="LOCAL-00044" summary="crated UserInterface">
+      <created>1693485133946</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1693485133946</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,9 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ctreated UserInteraction" />
-    <MESSAGE value="changed UserInteraction as added checkingIntMassage method" />
-    <MESSAGE value="changed UserInteraction as added checkingUserAnswerForInt, checkingUserAnswerForDouble, isNotEmpty  methods" />
     <MESSAGE value="changed UserInteraction as deleted isNotEmpty method" />
     <MESSAGE value="changed FileIO as crated is writeFile method" />
     <MESSAGE value="changed FileIO as changed is writeFile method" />
@@ -394,6 +410,9 @@
     <MESSAGE value="changed FileIO as changed writeFile method" />
     <MESSAGE value="changed ToyService as created raffle method" />
     <MESSAGE value="testing raffle method" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing raffle method" />
+    <MESSAGE value="remove static in UserInteraction and related problem" />
+    <MESSAGE value="remove static in FileIO and related problem" />
+    <MESSAGE value="crated UserInterface" />
+    <option name="LAST_COMMIT_MESSAGE" value="crated UserInterface" />
   </component>
 </project>
