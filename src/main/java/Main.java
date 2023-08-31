@@ -20,7 +20,8 @@ public class Main {
 
 
         ToyService toyService = new ToyService();
-        List<Toy> test = toyService.toysList();
+        toyService.raffle(toys);
+        /*List<Toy> test = toyService.toysList();
         List<Toy> testQueue = new ArrayList<>();
         PriorityQueue<Toy> priorityQueue = new PriorityQueue<>(test);
         while(!priorityQueue.isEmpty()){
@@ -32,7 +33,7 @@ public class Main {
             testQueue.add(priorityQueue.poll());
         }
         System.out.println(testQueue);
-        toyService.showToys(toys);
+        toyService.showToys(toys);*/
     }
 
 }

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as changed toysList method">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as created raffle method">
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,7 +333,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693465959383</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="changed FileIO as changed writeFile method">
+      <created>1693468107193</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1693468107193</updated>
+    </task>
+    <task id="LOCAL-00040" summary="changed ToyService as created raffle method">
+      <created>1693468138282</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1693468138282</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,8 +362,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed ToyList and deleted MyUuidApp.java" />
-    <MESSAGE value="renamed ToyList as ToyService" />
     <MESSAGE value="changed ToyService as added showToys method" />
     <MESSAGE value="ctreated UserInteraction" />
     <MESSAGE value="changed UserInteraction as added checkingIntMassage method" />
@@ -374,6 +385,8 @@
     <MESSAGE value="changed Toy as changed compareTo method" />
     <MESSAGE value="changed ToyService as changed toyShow method" />
     <MESSAGE value="changed ToyService as changed toysList method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as changed toysList method" />
+    <MESSAGE value="changed FileIO as changed writeFile method" />
+    <MESSAGE value="changed ToyService as created raffle method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as created raffle method" />
   </component>
 </project>
