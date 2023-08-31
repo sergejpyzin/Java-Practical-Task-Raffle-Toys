@@ -1,12 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 
 
 public class ToyService {
 
-    List<Toy> toyList = new ArrayList<>();
-
-    //
     public void showToys(List<Toy> toyList) {
         if (toyList.isEmpty()) {
             System.out.println("Список игрушек пуст");
@@ -49,6 +47,15 @@ public class ToyService {
         }
 
         return toys;
+    }
+
+    public void raffle(List<Toy> toysList){
+        List<Toy> toyRaffle = new ArrayList<>();
+        PriorityQueue<Toy> raffle = new PriorityQueue<>(toysList);
+        while (!raffle.isEmpty()){
+            toyRaffle.add(raffle.poll());
+        }
+        FileIO.writeFile(toyRaffle, "testTwo");
     }
 
     private int parseInt(String[] someString) {

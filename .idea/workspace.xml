@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as changed toysList method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +320,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693464642686</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="changed ToyService as changed toyShow method">
+      <created>1693465782675</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1693465782675</updated>
+    </task>
+    <task id="LOCAL-00038" summary="changed ToyService as changed toysList method">
+      <created>1693465959383</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1693465959383</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,7 +349,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed all files" />
     <MESSAGE value="changed ToyList and deleted MyUuidApp.java" />
     <MESSAGE value="renamed ToyList as ToyService" />
     <MESSAGE value="changed ToyService as added showToys method" />
@@ -362,6 +372,7 @@
     <MESSAGE value="changed ToyService as created parseInt, parseDouble, isSize methods" />
     <MESSAGE value="changed ToyService as changed parseInt method" />
     <MESSAGE value="changed Toy as changed compareTo method" />
+    <MESSAGE value="changed ToyService as changed toyShow method" />
     <MESSAGE value="changed ToyService as changed toysList method" />
     <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as changed toysList method" />
   </component>

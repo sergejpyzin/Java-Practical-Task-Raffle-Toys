@@ -18,18 +18,7 @@ public class Main {
 
 
 
-        /*int number = UserInteraction.checkingUserAnswerForInt("Введите число: ");
-        System.out.println(number);*/
-        /*ToyService toyService = new ToyService();
-        List<Toy> toys = toyService.toysList();
-        System.out.println(toys);
-        FileIO.writeFile(toys);*/
-        /*double number = UserInteraction.checkingUserAnswerForDouble("222");
-        System.out.println(number);*/
-//        Collections.sort(toys);
-//        ToyService toyService = new ToyService();
-//        toyService.toysList();
-//        System.out.println("=========================================================");
+
         ToyService toyService = new ToyService();
         List<Toy> test = toyService.toysList();
         List<Toy> testQueue = new ArrayList<>();
@@ -38,7 +27,7 @@ public class Main {
             testQueue.add(priorityQueue.poll());
 
         }
-        FileIO.writeFile(testQueue);
+        FileIO.writeFile(testQueue, "testTwo");
         for (int i = 0; i < 5; i++) {
             testQueue.add(priorityQueue.poll());
         }
