@@ -17,7 +17,7 @@ public class ToyService {
 
     }
 
-    public List<Toy> toysList() {
+    public List<Toy> toys() {
         List<Toy> toys = new ArrayList<>();
         int size = userInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
         while (size > 0) {
@@ -43,7 +43,6 @@ public class ToyService {
                 }
             } else {
                 System.out.println("Внимание! Ошибка формата ввода. ");
-                toysList();
             }
         }
 
