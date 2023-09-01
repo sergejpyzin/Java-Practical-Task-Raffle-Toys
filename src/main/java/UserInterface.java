@@ -10,7 +10,7 @@ public class UserInterface {
     public  void runApp() {
         Scanner scanner = new Scanner(System.in);
         String answer = "";
-        List<Toy> toys = new ArrayList<>();
+        List<Toy> toys;
         do {
             System.out.println("""
                     Здравствуйте, Вас приветствует программа для розыгрыша игрушек.
