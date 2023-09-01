@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="crated UserInterface" />
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInterface as created runApp method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -373,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693485133946</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="changed UserInterface as created runApp method">
+      <created>1693486822251</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1693486822251</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,7 +398,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed UserInteraction as deleted isNotEmpty method" />
     <MESSAGE value="changed FileIO as crated is writeFile method" />
     <MESSAGE value="changed FileIO as changed is writeFile method" />
     <MESSAGE value="changed FileIO as optimized import" />
@@ -413,6 +422,7 @@
     <MESSAGE value="remove static in UserInteraction and related problem" />
     <MESSAGE value="remove static in FileIO and related problem" />
     <MESSAGE value="crated UserInterface" />
-    <option name="LAST_COMMIT_MESSAGE" value="crated UserInterface" />
+    <MESSAGE value="changed UserInterface as created runApp method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed UserInterface as created runApp method" />
   </component>
 </project>

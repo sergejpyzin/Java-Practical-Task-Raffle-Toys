@@ -21,12 +21,10 @@ public class ToyService {
         List<Toy> toys = new ArrayList<>();
         int size = userInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
         while (size > 0) {
-            String userAnswer = userInteraction.checkingUserAnswerFromEmpty(
-                    """
+            String userAnswer = userInteraction.checkingUserAnswerFromEmpty("""
                             Введите игрушки для розыграша в формате:
                             'кол-во игрушек наименование шанс выпадения в процентах'
-                            Пример: 2 конструктор 30
-                            """);
+                            Пример: 2 конструктор 30""");
             String[] splitString = userAnswer.split(" ");
             if (isSize(splitString)) {
                 String name = splitString[1];
