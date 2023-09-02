@@ -17,20 +17,6 @@ public class UserInteraction {
         return parseAnswer;
     }
 
-    public double checkingUserAnswerForDouble(String massage) {
-        boolean flag = false;
-        double parseAnswer = 0;
-        do {
-            try {
-                String checkAnswer = checkingUserAnswerFromEmpty(massage);
-                parseAnswer = Double.parseDouble(checkAnswer);
-                flag = true;
-            } catch (NumberFormatException e) {
-                System.out.println("Введенное значение не число!");
-            }
-        } while (!flag);
-        return parseAnswer;
-    }
 
     public String checkingUserAnswerFromEmpty(String massage) {
         Scanner scanner = new Scanner(System.in);
