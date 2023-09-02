@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class UserInteraction {
 
-    public int checkingUserAnswerForInt(String massage) {
+    protected int checkingUserAnswerForInt(String massage) {
         boolean flag = false;
         int parseAnswer = 0;
         do {
@@ -18,7 +18,7 @@ public class UserInteraction {
     }
 
 
-    public String checkingUserAnswerFromEmpty(String massage) {
+    protected String checkingUserAnswerFromEmpty(String massage) {
         Scanner scanner = new Scanner(System.in);
         String userAnswer = null;
         boolean flag = false;
