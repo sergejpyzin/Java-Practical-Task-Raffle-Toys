@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class UserInteraction {
@@ -43,6 +44,10 @@ public class UserInteraction {
             }
         } while (!flag);
         return userAnswer;
+    }
+
+    public boolean checkingAnswer(String[] correctArray, String checkedString){
+        return Arrays.asList(correctArray).contains(checkedString);
     }
 
 
