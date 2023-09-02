@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed FileIO as changed all methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInterface as changed menuApp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,34 +64,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00010" summary="changed ToyList and deleted MyUuidApp.java">
-      <created>1693119480297</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1693119480297</updated>
-    </task>
-    <task id="LOCAL-00011" summary="changed ToyService as added showToys method">
-      <created>1693120091646</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1693120091646</updated>
-    </task>
-    <task id="LOCAL-00012" summary="ctreated UserInteraction">
-      <created>1693120158587</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1693120158587</updated>
-    </task>
-    <task id="LOCAL-00013" summary="changed UserInteraction as added checkingIntMassage method">
-      <created>1693120848135</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1693120848135</updated>
     </task>
     <task id="LOCAL-00014" summary="changed UserInteraction as added checkingUserAnswerForInt, checkingUserAnswerForDouble, isNotEmpty  methods">
       <created>1693151940837</created>
@@ -414,7 +380,35 @@
       <option name="project" value="LOCAL" />
       <updated>1693661737681</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="changed Toy as changed Double frequencyOfLoss to String and constructor">
+      <created>1693671751582</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1693671751582</updated>
+    </task>
+    <task id="LOCAL-00060" summary="changed Toy as rectification problem">
+      <created>1693671834707</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1693671834707</updated>
+    </task>
+    <task id="LOCAL-00061" summary="changed ToyService as changed toyService and createdToy methods">
+      <created>1693671887777</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1693671887777</updated>
+    </task>
+    <task id="LOCAL-00062" summary="changed UserInterface as changed menuApp">
+      <created>1693671914786</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1693671914786</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -429,10 +423,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed UserInteraction as deleted isNotEmptyAnswerUser method" />
-    <MESSAGE value="changed ToyService as changed toysList method and changed Toy as toString method" />
-    <MESSAGE value="Non changed" />
-    <MESSAGE value="changed ToyService as created parseInt, parseDouble, isSize methods" />
     <MESSAGE value="changed ToyService as changed parseInt method" />
     <MESSAGE value="changed Toy as changed compareTo method" />
     <MESSAGE value="changed ToyService as changed toyShow method" />
@@ -454,6 +444,10 @@
     <MESSAGE value="changed UserInteraction as protected method" />
     <MESSAGE value="changed UserInterface as added String path" />
     <MESSAGE value="changed FileIO as changed all methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed FileIO as changed all methods" />
+    <MESSAGE value="changed Toy as changed Double frequencyOfLoss to String and constructor" />
+    <MESSAGE value="changed Toy as rectification problem" />
+    <MESSAGE value="changed ToyService as changed toyService and createdToy methods" />
+    <MESSAGE value="changed UserInterface as changed menuApp" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed UserInterface as changed menuApp" />
   </component>
 </project>
