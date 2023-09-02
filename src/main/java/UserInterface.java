@@ -24,6 +24,10 @@ public class UserInterface {
                     =================================
                     Введите номер меню:""");
             answer = scanner.next();
+            if (!answer.equals("1")&&!answer.equals("2")&&!answer.equals("3")){
+                System.out.println("Введен некорректный номер меню! Попробуйте еще раз");
+                answer = scanner.next();
+            }
             if (answer.equals("1")){
                 toyService.toyService(pathForRaffleFile);
             }
@@ -37,8 +41,18 @@ public class UserInterface {
                 }else{
                     toyService.raffle(toysForRaffle, pathRaffleFile);
                 }
+                System.out.println("Вывести результаты розыгрыша в консоль? Да/Нет");
+                answer = scanner.next();
+                if (answer.equalsIgnoreCase("да")){
+                    System.out.println("""
+                            =====================================
+                            Результаты розыгрыша:""");
+                    toyService.showToys(FileIO.readFile(pathRaffleFile));
+                }
             }
         }while (!answer.equals("3"));
+        System.out.println("Спасибо за использование нашей программы. До свидания.");
+        System.exit(0);
     }
 
     public static void runApp(){
