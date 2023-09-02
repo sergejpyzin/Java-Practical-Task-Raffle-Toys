@@ -23,7 +23,7 @@ public class ToyService {
         List<String> nameArray = new ArrayList<>();
         List<Integer> frequencyOfLossArray = new ArrayList<>();
         int size = userInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
-        for (int i = 0; i < size; i++) {
+        for (int i = 1; i < size + 1; i++) {
             idArray.add(i);
         }
         while (size > 0) {
@@ -60,7 +60,7 @@ public class ToyService {
         while (!toyRaffle.isEmpty()) {
             double totalWeight = 0.0d;
             for (Toy toy : toyRaffle) {
-                totalWeight +=toy.getFrequencyOfLoss();
+                totalWeight += toy.getFrequencyOfLoss();
             }
             int randomIndex = -1;
             double random = Math.random() * totalWeight;
