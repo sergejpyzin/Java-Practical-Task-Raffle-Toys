@@ -1,8 +1,5 @@
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 public class UserInterface {
 
@@ -28,7 +25,6 @@ public class UserInterface {
                     =================================""");
             answer = userInteraction.checkingUserAnswerFromEmpty("Введите номер меню:");
             if (!Arrays.asList(correctAnswer).contains(answer)) {
-
                 answer = userInteraction.checkingUserAnswerFromEmpty("Некорректный ввод. Введите номер меню:");
             }
             if (answer.equals("1")) {
@@ -46,6 +42,9 @@ public class UserInterface {
                 }
                 do {
                     answer = userInteraction.checkingUserAnswerFromEmpty("Вывести результаты розыгрыша в консоль? Да/Нет");
+                    if (!Arrays.asList(correctAnswer).contains(answer)) {
+                        answer = userInteraction.checkingUserAnswerFromEmpty("Некорректный ввод. Введите Да или Нет");
+                    }
                     if (answer.equalsIgnoreCase("да")) {
                         System.out.println("""
                                 =====================================

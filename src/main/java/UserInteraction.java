@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class UserInteraction {
@@ -45,8 +44,4 @@ public class UserInteraction {
         } while (!flag);
         return userAnswer;
     }
-
-
-
-
 }
