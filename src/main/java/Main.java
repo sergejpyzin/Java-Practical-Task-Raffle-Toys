@@ -49,13 +49,13 @@ public class Main {
             toys.remove(toys.get(randomIndex));
         }*/
 //        Collections.sort(toys);
-        ToyService toyService = new ToyService();
+        /*ToyService toyService = new ToyService();
         List<Toy> result = FileIO.readFile("result.txt");
         System.out.println(result);
-        toyService.raffle(result, "resultRaffle.txt");
+        toyService.raffle(result, "resultRaffle.txt");*/
 
 
-//        UserInterface.runApp();
+        UserInterface.runApp();
         /*List<String> name = new ArrayList<>();
         List<Integer> frequency = new ArrayList<>();
         for (Toy toy: toys){

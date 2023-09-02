@@ -1,29 +1,29 @@
 import java.util.Comparator;
 
 public class Toy implements Comparable<Toy>{
-    private String id;
+    private Integer id;
     private String name;
-    private String frequencyOfLoss;
+    private Integer frequencyOfLoss;
 
-    public Toy(String id, String name, String frequencyOfLoss) {
+    public Toy(Integer id, String name, Integer frequencyOfLoss) {
         this.id = id;
         this.name = name;
         this.frequencyOfLoss = frequencyOfLoss;
     }
 
 
-    public String getId(){
+    public Integer getId(){
         return id;
     }
     public String getName() {
         return name;
     }
 
-    public String getFrequencyOfLoss() {
+    public Integer getFrequencyOfLoss() {
         return frequencyOfLoss;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -31,13 +31,13 @@ public class Toy implements Comparable<Toy>{
         this.name = name;
     }
 
-    public void setFrequencyOfLoss(String frequencyOfLoss) {
+    public void setFrequencyOfLoss(Integer frequencyOfLoss) {
         this.frequencyOfLoss = frequencyOfLoss;
     }
 
     @Override
     public String toString() {
-        return String.format("id: %s Наименование игрушки: %s шанс выпадения в процентах: %s", this.id, this.name, this.frequencyOfLoss);
+        return String.format("id: %d Наименование игрушки: %s шанс выпадения в процентах: %d", this.id, this.name, this.frequencyOfLoss);
     }
 
     @Override
