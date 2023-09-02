@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInterface as changed menuApp method">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="rectification problem in all class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputToys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputToys.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultRaffle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resultRaffle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00033" summary="changed ToyService as changed parseInt method">
-      <created>1693290840551</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1693290840551</updated>
     </task>
     <task id="LOCAL-00034" summary="changed ToyService as changed toysList method">
       <created>1693295773356</created>
@@ -411,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693690350482</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="rectification problem in all class">
+      <created>1693690669416</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1693690669416</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed UserInteraction as deleted checkingUserAnswerForDouble method" />
     <MESSAGE value="changed UserInterface as renamed runApp to menuApp" />
     <MESSAGE value="changed ToyService as added argument pathWrite and changed UserInterface as rectification problem" />
     <MESSAGE value="changed UserInteraction as protected method" />
@@ -451,6 +453,7 @@
     <MESSAGE value="changed UserInteraction as created checkingAnswer method" />
     <MESSAGE value="changed UserInteraction as deleted checkingAnswer method" />
     <MESSAGE value="changed UserInterface as changed menuApp method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed UserInterface as changed menuApp method" />
+    <MESSAGE value="rectification problem in all class" />
+    <option name="LAST_COMMIT_MESSAGE" value="rectification problem in all class" />
   </component>
 </project>
