@@ -17,14 +17,14 @@ public class UserInteraction {
         return parseAnswer;
     }
 
-    protected int checkStringParseInt(String[] someString, int index) {
-        int parseString = 0;
+    protected int checkStringParseToInt(String[] someString, int index) {
+        int parseStringToInt = 0;
         try {
-            parseString = Integer.parseInt(someString[index]);
+            parseStringToInt = Integer.parseInt(someString[index].replace(",", ""));
         } catch (NumberFormatException e) {
             System.out.println("Введенное значение не число!");
         }
-        return parseString;
+        return parseStringToInt;
     }
 
 
