@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class Toy implements Comparable<Toy>{
     private String id;
     private String name;
@@ -40,6 +42,6 @@ public class Toy implements Comparable<Toy>{
 
     @Override
     public int compareTo(Toy o) {
-        return this.frequencyOfLoss.compareTo(o.frequencyOfLoss);
+        return Comparator.comparing(Toy::getFrequencyOfLoss).thenComparing(Toy::getName).thenComparing(Toy::getId).compare(this, o);
     }
 }
