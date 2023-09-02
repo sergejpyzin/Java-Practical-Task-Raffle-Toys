@@ -33,7 +33,7 @@ public class ToyService {
                 int temp = size;
                 int countPlace = size - count;
                 size = countPlace;
-                System.out.println("ВНИМАНИЕ! Осталось мест в списке для розыграша - " + size);
+                System.out.println("ВНИМАНИЕ! Осталось мест в списке для розыграша - " + Math.abs(size));
                 if (countPlace < 0) {
                     System.out.println("Количество игрушек превышает максимально возможное. Будет добавлено игрушек " + name + " - " + temp);
                     count = temp;
@@ -84,7 +84,7 @@ public class ToyService {
         int number = 0;
         do {
             try {
-                number = Integer.parseInt(someString[4]);
+                number = Integer.parseInt(someString[someString.length - 1]);
                 flag = true;
             } catch (NumberFormatException e) {
                 System.err.println(e.getMessage());
