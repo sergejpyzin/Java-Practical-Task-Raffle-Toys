@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        Toy firstToy = new Toy("1", "First", "20");
+/*        Toy firstToy = new Toy("1", "First", "20");
         Toy secondToy = new Toy("2","First", "20");
         Toy thirdToy = new Toy("3", "Second", "20");
         List<Toy> toys = new ArrayList<>();
@@ -47,11 +47,12 @@ public class Main {
             Toy RandomToy = toys.get(randomIndex);
             resultRaffle.add(RandomToy);
             toys.remove(toys.get(randomIndex));
-        }
+        }*/
 //        Collections.sort(toys);
         ToyService toyService = new ToyService();
-        toyService.showToys(resultRaffle);
-        toyService.showToys(toys);
+        List<Toy> result = FileIO.readFile("result.txt");
+        System.out.println(result);
+        toyService.raffle(result, "resultRaffle.txt");
 
 
 //        UserInterface.runApp();

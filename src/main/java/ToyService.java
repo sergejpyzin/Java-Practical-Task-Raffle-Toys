@@ -46,18 +46,39 @@ public class ToyService {
 
     public void raffle(List<Toy> toysList, String path) {
         List<Toy> toyRaffle = new ArrayList<>();
+        List<Toy> resultRaffle = new ArrayList<>();
         PriorityQueue<Toy> raffle = new PriorityQueue<>(toysList);
         while (!raffle.isEmpty()) {
-            toyRaffle.add(0, raffle.poll());
+            toyRaffle.add(createdToy(String.valueOf(raffle.poll())));
+        }
+        System.out.println(toyRaffle);
+        while (!toyRaffle.isEmpty()) {
+            double totalWeight = 0.0d;
+            for (Toy toy : toyRaffle) {
+                totalWeight += Integer.parseInt(toy.getFrequencyOfLoss());
+            }
+            int randomIndex = -1;
+            double random = Math.random() * totalWeight;
+            for (int i = 0; i < toyRaffle.size(); ++i) {
+                int toyWeight = Integer.parseInt(toyRaffle.get(i).getFrequencyOfLoss());
+                random -= toyWeight;
+                if (random <= 0.0d) {
+                    randomIndex = i;
+                    break;
+                }
+            }
+            Toy RandomToy = toyRaffle.get(randomIndex);
+            resultRaffle.add(RandomToy);
+            toyRaffle.remove(toyRaffle.get(randomIndex));
         }
         System.out.println("Розыгрыш проведен успешно");
-        FileIO.writeFile(toyRaffle, path);
+        FileIO.writeFile(resultRaffle, path);
     }
 
     public Toy createdToy(String toysString) {
         String[] splitString = toysString.split(" ");
         String id = splitString[1];
-        String name = splitString[2].replace(",", "");
+        String name = splitString[4].replace(",", "");
         String frequencyOfLoss = splitString[splitString.length - 1];
         return new Toy(id, name, frequencyOfLoss);
     }
