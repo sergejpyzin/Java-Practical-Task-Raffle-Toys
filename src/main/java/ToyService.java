@@ -17,7 +17,7 @@ public class ToyService {
 
     }
 
-    public void toyService() {
+    public void toyService(String pathWrite) {
         List<Toy> toys = new ArrayList<>();
         int size = userInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
         while (size > 0) {
@@ -45,7 +45,7 @@ public class ToyService {
                 System.out.println("Внимание! Ошибка формата ввода. ");
             }
         }
-        FileIO.writeFile(toys, "Toysforraffle");
+        FileIO.writeFile(toys, pathWrite);
     }
 
     public void raffle(List<Toy> toysList, String path) {
