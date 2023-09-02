@@ -80,6 +80,27 @@ public class ToyService {
         FileIO.writeFile(resultRaffle, path);
     }
 
+    public Toy randomToy(List<Toy> toysList) {
+        List<Toy> toyRaffle = createPriorityQueue(toysList);
+        Toy randomToy = null;
+        double totalWeight = 0.0d;
+        for (Toy toy : toyRaffle) {
+            totalWeight += toy.getFrequencyOfLoss();
+        }
+        int randomIndex = -1;
+        double random = Math.random() * totalWeight;
+        for (int i = 0; i < toyRaffle.size(); ++i) {
+            int toyWeight = toyRaffle.get(i).getFrequencyOfLoss();
+            random -= toyWeight;
+            if (random <= 0.0d) {
+                randomIndex = i;
+                break;
+            }
+        }
+        randomToy = toyRaffle.get(randomIndex);
+        return randomToy;
+    }
+
     public Toy createdToy(String toysString) {
         String[] splitString = toysString.split(" ");
         int id = Integer.parseInt(splitString[1]);
@@ -90,6 +111,15 @@ public class ToyService {
 
     private boolean isSize(String[] someString) {
         return someString.length == 3;
+    }
+
+    private List<Toy> createPriorityQueue(List<Toy> someList) {
+        List<Toy> priorityList = new ArrayList<>();
+        PriorityQueue<Toy> raffle = new PriorityQueue<>(someList);
+        while (!raffle.isEmpty()) {
+            priorityList.add(createdToy(String.valueOf(raffle.poll())));
+        }
+        return priorityList;
     }
 
 

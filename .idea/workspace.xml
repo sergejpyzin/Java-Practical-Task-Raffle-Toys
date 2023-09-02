@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService changed raffle method">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="deleted GetRandom.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,55 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00019" summary="changed ToyService as added List method">
-      <created>1693208825898</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1693208825898</updated>
-    </task>
-    <task id="LOCAL-00020" summary="changed UserInteraction as changed checkingUserAnswerForInt and checkingUserAnswerForDouble methods">
-      <created>1693209685378</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1693209685378</updated>
-    </task>
-    <task id="LOCAL-00021" summary="changed UserInteraction as created checkingUserAnswer methods">
-      <created>1693209932114</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1693209932114</updated>
-    </task>
-    <task id="LOCAL-00022" summary="changed UserInteraction as changed checkingUserAnswer methods">
-      <created>1693209957047</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1693209957047</updated>
-    </task>
-    <task id="LOCAL-00023" summary="changed UserInteraction as renamed checkingUserAnswer as checkingUserAnswerFromEmpty and changed checkingUserAnswerFromEmpty method">
-      <created>1693212401368</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1693212401368</updated>
-    </task>
-    <task id="LOCAL-00024" summary="changed UserInteraction as changed checkingUserAnswerForDouble method">
-      <created>1693222898769</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1693222898769</updated>
-    </task>
-    <task id="LOCAL-00025" summary="changed UserInteraction as changed checkingUserAnswerForInt method">
-      <created>1693223025306</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1693223025306</updated>
     </task>
     <task id="LOCAL-00026" summary="changed UserInteraction as deleted isNotEmptyAnswerUser method">
       <created>1693223692354</created>
@@ -414,7 +364,56 @@
       <option name="project" value="LOCAL" />
       <updated>1693681416542</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="changed Toy as changed String id and String frequencyOfLoss to Integer">
+      <created>1693683731071</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1693683731071</updated>
+    </task>
+    <task id="LOCAL-00069" summary="changed ToyService as changed toyService">
+      <created>1693683755421</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1693683755421</updated>
+    </task>
+    <task id="LOCAL-00070" summary="changed ToyService as changed toyService">
+      <created>1693684221999</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1693684221999</updated>
+    </task>
+    <task id="LOCAL-00071" summary="changed UserInteraction as added checkStringParseInt">
+      <created>1693684577261</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1693684577261</updated>
+    </task>
+    <task id="LOCAL-00072" summary="changed ToyService as changed toyService">
+      <created>1693684719365</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1693684719365</updated>
+    </task>
+    <task id="LOCAL-00073" summary="changed UserInteraction as changed checkStringParseToInt and rectification problem  toyService in ToyService.java">
+      <created>1693684924758</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1693684924758</updated>
+    </task>
+    <task id="LOCAL-00074" summary="deleted GetRandom.java">
+      <created>1693684955748</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1693684955748</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -429,10 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing raffle method" />
-    <MESSAGE value="remove static in UserInteraction and related problem" />
-    <MESSAGE value="remove static in FileIO and related problem" />
-    <MESSAGE value="crated UserInterface" />
     <MESSAGE value="changed UserInterface as created runApp method" />
     <MESSAGE value="changed ToyService as changed toysList and raffle methods" />
     <MESSAGE value="changed ToyService as changed toysList method" />
@@ -441,7 +436,6 @@
     <MESSAGE value="changed UserInteraction as deleted checkingUserAnswerForDouble method" />
     <MESSAGE value="changed UserInterface as renamed runApp to menuApp" />
     <MESSAGE value="changed ToyService as added argument pathWrite and changed UserInterface as rectification problem" />
-    <MESSAGE value="changed ToyService as changed toyService" />
     <MESSAGE value="changed UserInteraction as protected method" />
     <MESSAGE value="changed UserInterface as added String path" />
     <MESSAGE value="changed FileIO as changed all methods" />
@@ -454,6 +448,11 @@
     <MESSAGE value="created GetRandom" />
     <MESSAGE value="changed Toy" />
     <MESSAGE value="changed ToyService changed raffle method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService changed raffle method" />
+    <MESSAGE value="changed Toy as changed String id and String frequencyOfLoss to Integer" />
+    <MESSAGE value="changed UserInteraction as added checkStringParseInt" />
+    <MESSAGE value="changed ToyService as changed toyService" />
+    <MESSAGE value="changed UserInteraction as changed checkStringParseToInt and rectification problem  toyService in ToyService.java" />
+    <MESSAGE value="deleted GetRandom.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted GetRandom.java" />
   </component>
 </project>
