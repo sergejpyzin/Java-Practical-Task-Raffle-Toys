@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as added argument pathWrite and changed UserInterface as rectification problem">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed FileIO as changed all methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testTwo.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,34 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00006" summary="changed ToyList as added hashmap">
-      <created>1692684755376</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1692684755376</updated>
-    </task>
-    <task id="LOCAL-00007" summary="created FileIO">
-      <created>1692684793486</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1692684793486</updated>
-    </task>
-    <task id="LOCAL-00008" summary="changed FileIO">
-      <created>1692860304189</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1692860304189</updated>
-    </task>
-    <task id="LOCAL-00009" summary="changed all files">
-      <created>1693119393230</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1693119393230</updated>
     </task>
     <task id="LOCAL-00010" summary="changed ToyList and deleted MyUuidApp.java">
       <created>1693119480297</created>
@@ -417,7 +386,35 @@
       <option name="project" value="LOCAL" />
       <updated>1693648603158</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="changed ToyService as changed toyService">
+      <created>1693661530639</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1693661530639</updated>
+    </task>
+    <task id="LOCAL-00056" summary="changed UserInteraction as protected method">
+      <created>1693661588832</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1693661588832</updated>
+    </task>
+    <task id="LOCAL-00057" summary="changed UserInterface as added String path">
+      <created>1693661626381</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1693661626381</updated>
+    </task>
+    <task id="LOCAL-00058" summary="changed FileIO as changed all methods">
+      <created>1693661737681</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1693661737681</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,10 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed UserInteraction as changed checkingUserAnswer methods" />
-    <MESSAGE value="changed UserInteraction as renamed checkingUserAnswer as checkingUserAnswerFromEmpty and changed checkingUserAnswerFromEmpty method" />
-    <MESSAGE value="changed UserInteraction as changed checkingUserAnswerForDouble method" />
-    <MESSAGE value="changed UserInteraction as changed checkingUserAnswerForInt method" />
     <MESSAGE value="changed UserInteraction as deleted isNotEmptyAnswerUser method" />
     <MESSAGE value="changed ToyService as changed toysList method and changed Toy as toString method" />
     <MESSAGE value="Non changed" />
@@ -457,6 +450,10 @@
     <MESSAGE value="changed UserInteraction as deleted checkingUserAnswerForDouble method" />
     <MESSAGE value="changed UserInterface as renamed runApp to menuApp" />
     <MESSAGE value="changed ToyService as added argument pathWrite and changed UserInterface as rectification problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as added argument pathWrite and changed UserInterface as rectification problem" />
+    <MESSAGE value="changed ToyService as changed toyService" />
+    <MESSAGE value="changed UserInteraction as protected method" />
+    <MESSAGE value="changed UserInterface as added String path" />
+    <MESSAGE value="changed FileIO as changed all methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed FileIO as changed all methods" />
   </component>
 </project>
