@@ -35,20 +35,5 @@ public class UserInteraction {
         return userAnswer;
     }
 
-    public String answerIsEmpty(String massage){
-        Scanner scanner = new Scanner(System.in);
-        String answer;
-        boolean flag = true;
-        do {
-            answer = scanner.next();
-            if(answer.isEmpty()){
-                System.out.println("Некорректный ввод. Попробуйте ещё раз");
-            }else {
-                flag = false;
-            }
-        }while (flag);
-        return answer;
-    }
-
 
 }
