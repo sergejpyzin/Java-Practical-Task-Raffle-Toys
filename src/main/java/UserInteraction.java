@@ -46,9 +46,7 @@ public class UserInteraction {
         return userAnswer;
     }
 
-    public boolean checkingAnswer(String[] correctArray, String checkedString){
-        return Arrays.asList(correctArray).contains(checkedString);
-    }
+
 
 
 }
