@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class UserInterface {
     UserInteraction interaction = new UserInteraction();
-    FileIO fileIO = new FileIO();
     ToyService toyService = new ToyService();
 
-    public  void runApp(String pathRead, String pathWrite) {
+    public  void menuApp(String pathRead, String pathWrite) {
         Scanner scanner = new Scanner(System.in);
         String answer = "";
         List<Toy> toys = null;
@@ -31,7 +30,10 @@ public class UserInterface {
             if (answer.equals("2")){
                 List<Toy> toysForRaffle = FileIO.readFile(pathRead);
                 if (toysForRaffle.isEmpty()){
-                    System.out.println("Магазин игрушек пуст. Внесите хотя бы одну игрушку.");
+                    System.out.println("""
+                            Магазин игрушек пуст. Внесите хотя бы одну игрушку.
+                            ===================================================""");
+                    toyService.toyService();
                 }else{
                     toyService.raffle(toysForRaffle, pathWrite);
                 }
