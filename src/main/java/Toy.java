@@ -1,5 +1,10 @@
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Comparator;
 
+@Getter
+@Setter
 public class Toy implements Comparable<Toy>{
     private Integer id;
     private String name;
@@ -8,30 +13,6 @@ public class Toy implements Comparable<Toy>{
     public Toy(Integer id, String name, Integer frequencyOfLoss) {
         this.id = id;
         this.name = name;
-        this.frequencyOfLoss = frequencyOfLoss;
-    }
-
-
-    public Integer getId(){
-        return id;
-    }
-    public String getName() {
-        return name;
-    }
-
-    public Integer getFrequencyOfLoss() {
-        return frequencyOfLoss;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setFrequencyOfLoss(Integer frequencyOfLoss) {
         this.frequencyOfLoss = frequencyOfLoss;
     }
 

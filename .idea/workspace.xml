@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInteraction as deleted checkingAnswer method">
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInterface as changed menuApp method">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,20 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00031" summary="changed ToyService as created parseInt, parseDouble, isSize methods">
-      <created>1693246825593</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1693246825593</updated>
-    </task>
-    <task id="LOCAL-00032" summary="changed ToyService as changed toysList method">
-      <created>1693290753960</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1693290753960</updated>
     </task>
     <task id="LOCAL-00033" summary="changed ToyService as changed parseInt method">
       <created>1693290840551</created>
@@ -412,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693689607066</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="changed UserInterface as changed menuApp method">
+      <created>1693689900574</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1693689900574</updated>
+    </task>
+    <task id="LOCAL-00081" summary="changed UserInterface as changed menuApp method">
+      <created>1693690350481</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1693690350482</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,9 +448,9 @@
     <MESSAGE value="deleted GetRandom.java" />
     <MESSAGE value="changed ToyService as added createPriorityQueue method" />
     <MESSAGE value="changed ToyService as changed all methods" />
-    <MESSAGE value="changed UserInterface as changed menuApp method" />
     <MESSAGE value="changed UserInteraction as created checkingAnswer method" />
     <MESSAGE value="changed UserInteraction as deleted checkingAnswer method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed UserInteraction as deleted checkingAnswer method" />
+    <MESSAGE value="changed UserInterface as changed menuApp method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed UserInterface as changed menuApp method" />
   </component>
 </project>
