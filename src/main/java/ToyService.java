@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class ToyService {
 
     UserInteraction userInteraction = new UserInteraction();
-    FileIO fileIO = new FileIO();
+
 
     public void showToys(List<Toy> toyList) {
         if (toyList.isEmpty()) {
@@ -17,19 +17,19 @@ public class ToyService {
 
     }
 
-    public List<Toy> toys() {
+    public void toyService() {
         List<Toy> toys = new ArrayList<>();
         int size = userInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
         while (size > 0) {
             String userAnswer = userInteraction.checkingUserAnswerFromEmpty("""
-                            Введите игрушки для розыграша в формате:
-                            'кол-во игрушек наименование шанс выпадения в процентах'
-                            Пример: 2 конструктор 30""");
+                    Введите игрушки для розыграша в формате:
+                    'кол-во игрушек наименование шанс выпадения в процентах'
+                    Пример: 2 конструктор 30""");
             String[] splitString = userAnswer.split(" ");
             if (isSize(splitString)) {
-                String name = splitString[1];
-                int count = parseInt(splitString);
-                double frequencyOfLoss = parseDouble(splitString);
+                String name = splitString[1].replace(",", "");
+                int count = parseCount(splitString);
+                int frequencyOfLoss = parseFrequencyOfLoss(splitString);
                 int temp = size;
                 int countPlace = size - count;
                 size = countPlace;
@@ -45,20 +45,27 @@ public class ToyService {
                 System.out.println("Внимание! Ошибка формата ввода. ");
             }
         }
-
-        return toys;
+        FileIO.writeFile(toys, "Toysforraffle");
     }
 
-    public void raffle(List<Toy> toysList){
+    public void raffle(List<Toy> toysList, String path) {
         List<Toy> toyRaffle = new ArrayList<>();
         PriorityQueue<Toy> raffle = new PriorityQueue<>(toysList);
-        while (!raffle.isEmpty()){
+        while (!raffle.isEmpty()) {
             toyRaffle.add(raffle.poll());
         }
-        fileIO.writeFile(toyRaffle, "testTwo");
+        System.out.println("Розыгрыш проведен успешно");
+        FileIO.writeFile(toyRaffle, path);
     }
 
-    private int parseInt(String[] someString) {
+    public Toy createdToy(String toysString) {
+        String[] splitString = toysString.split(" ");
+        String name = splitString[1].replace(",", "");
+        int frequencyOfLoss = parseFrequencyOfLoss(splitString);
+        return new Toy(name, frequencyOfLoss);
+    }
+
+    private int parseCount(String[] someString) {
         int number = 0;
         boolean flag = false;
         do {
@@ -72,15 +79,16 @@ public class ToyService {
         return number;
     }
 
-    private double parseDouble(String[] someString) {
+    private int parseFrequencyOfLoss(String[] someString) {
         boolean flag = false;
-        double number = 0;
+        int number = 0;
         do {
             try {
-                number = Double.parseDouble(someString[2].replace(",", "."));
+                number = Integer.parseInt(someString[4]);
                 flag = true;
             } catch (NumberFormatException e) {
-                System.out.println(e.getMessage());
+                System.err.println(e.getMessage());
+
             }
         } while (!flag);
         return number;

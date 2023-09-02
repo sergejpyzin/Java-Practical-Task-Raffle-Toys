@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInterface.java as changed runApp method">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed all class as rectification problem">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testTwo" beforeDir="false" afterPath="$PROJECT_DIR$/testTwo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00001" summary="changed class Toy and create MyUuidApp.java">
-      <created>1692376927506</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1692376927506</updated>
     </task>
     <task id="LOCAL-00002" summary="changed MyUuidApp.java">
       <created>1692377017821</created>
@@ -403,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693553320444</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="changed UserInterface.java as changed runApp method">
+      <created>1693587731194</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1693587731194</updated>
+    </task>
+    <task id="LOCAL-00050" summary="changed all class as rectification problem">
+      <created>1693644327474</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1693644327474</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed FileIO as optimized import" />
     <MESSAGE value="changed ToyService as added List method" />
     <MESSAGE value="changed UserInteraction as changed checkingUserAnswerForInt and checkingUserAnswerForDouble methods" />
     <MESSAGE value="changed UserInteraction as created checkingUserAnswer methods" />
@@ -443,6 +453,7 @@
     <MESSAGE value="changed ToyService as changed toysList and raffle methods" />
     <MESSAGE value="changed ToyService as changed toysList method" />
     <MESSAGE value="changed UserInterface.java as changed runApp method" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed UserInterface.java as changed runApp method" />
+    <MESSAGE value="changed all class as rectification problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed all class as rectification problem" />
   </component>
 </project>

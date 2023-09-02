@@ -7,10 +7,10 @@ public class UserInterface {
     FileIO fileIO = new FileIO();
     ToyService toyService = new ToyService();
 
-    public  void runApp() {
+    public  void runApp(String pathRead, String pathWrite) {
         Scanner scanner = new Scanner(System.in);
         String answer = "";
-        List<Toy> toys;
+        List<Toy> toys = null;
         do {
             System.out.println("""
                     Здравствуйте, Вас приветствует программа для розыгрыша игрушек.
@@ -26,8 +26,15 @@ public class UserInterface {
                     Введите номер меню:""");
             answer = scanner.next();
             if (answer.equals("1")){
-                toys = toyService.toys();
-                System.out.println(toys);
+                toyService.toyService();
+            }
+            if (answer.equals("2")){
+                List<Toy> toysForRaffle = FileIO.readFile(pathRead);
+                if (toysForRaffle.isEmpty()){
+                    System.out.println("Магазин игрушек пуст. Внесите хотя бы одну игрушку.");
+                }else{
+                    toyService.raffle(toysForRaffle, pathWrite);
+                }
             }
         }while (!answer.equals("3"));
 

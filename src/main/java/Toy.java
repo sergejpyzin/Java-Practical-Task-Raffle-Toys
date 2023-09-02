@@ -3,9 +3,9 @@ import java.util.UUID;
 public class Toy implements Comparable<Toy>{
     private final String id;
     private String name;
-    private Double frequencyOfLoss;
+    private Integer frequencyOfLoss;
 
-    public Toy(String name, Double frequencyOfLoss) {
+    public Toy(String name, int frequencyOfLoss) {
         this.id = UUID.randomUUID().toString();
         this.name = name;
         this.frequencyOfLoss = frequencyOfLoss;
@@ -22,7 +22,7 @@ public class Toy implements Comparable<Toy>{
         return name;
     }
 
-    public Double getFrequencyOfLoss() {
+    public int getFrequencyOfLoss() {
         return frequencyOfLoss;
     }
 
@@ -30,13 +30,13 @@ public class Toy implements Comparable<Toy>{
         this.name = name;
     }
 
-    public void setFrequencyOfLoss(Double frequencyOfLoss) {
+    public void setFrequencyOfLoss(int frequencyOfLoss) {
         this.frequencyOfLoss = frequencyOfLoss;
     }
 
     @Override
     public String toString() {
-        return String.format("id:%s \t%s, вероятность выпадения:%.2f", this.id, this.name, this.frequencyOfLoss);
+        return String.format("id:%s %s вероятность: %d", this.id, this.name, this.frequencyOfLoss);
     }
 
     @Override

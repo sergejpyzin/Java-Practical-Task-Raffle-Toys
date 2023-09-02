@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
         /*Toy firstToy = new Toy("First", 0.65);
@@ -17,8 +15,9 @@ public class Main {
         toys.add(new Toy("Five", 0.66));*/
 
         UserInterface userInterface = new UserInterface();
+        userInterface.runApp("testTwo.txt", "test.txt");
 
-        userInterface.runApp();
+
 
     }
 
