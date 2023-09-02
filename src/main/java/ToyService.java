@@ -19,31 +19,27 @@ public class ToyService {
 
     public void toyService(String pathWrite) {
         List<Toy> toys = new ArrayList<>();
+        List<String> idArray = new ArrayList<>();
+        List<String> nameArray = new ArrayList<>();
+        List<String> frequencyOfLossArray = new ArrayList<>();
         int size = userInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
         while (size > 0) {
             String userAnswer = userInteraction.checkingUserAnswerFromEmpty("""
                     Введите игрушки для розыграша в формате:
-                    'кол-во игрушек наименование шанс выпадения в процентах'
-                    Пример: 2 конструктор 30""");
+                    'id игрушки, наименование, шанс выпадения в процентах'
+                    Пример: 1, конструктор, 30""");
             String[] splitString = userAnswer.split(" ");
             if (isSize(splitString)) {
-                String name = splitString[1].replace(",", "");
-                int count = parseCount(splitString);
-                int frequencyOfLoss = parseFrequencyOfLoss(splitString);
-                int temp = size;
-                int countPlace = size - count;
-                size = countPlace;
-                System.out.println("ВНИМАНИЕ! Осталось мест в списке для розыграша - " + Math.abs(size));
-                if (countPlace < 0) {
-                    System.out.println("Количество игрушек превышает максимально возможное. Будет добавлено игрушек " + name + " - " + temp);
-                    count = temp;
-                }
-                for (int i = 0; i < count; i++) {
-                    toys.add(new Toy(name, frequencyOfLoss));
-                }
+                idArray.add(splitString[0]);
+                nameArray.add(splitString[1].replace(",", ""));
+                frequencyOfLossArray.add(splitString[2]);
+                size--;
             } else {
                 System.out.println("Внимание! Ошибка формата ввода. ");
             }
+        }
+        for (int i = 0; i < idArray.size(); i++) {
+            toys.add(new Toy(idArray.get(i), nameArray.get(i), frequencyOfLossArray.get(i)));
         }
         FileIO.writeFile(toys, pathWrite);
     }
@@ -52,7 +48,7 @@ public class ToyService {
         List<Toy> toyRaffle = new ArrayList<>();
         PriorityQueue<Toy> raffle = new PriorityQueue<>(toysList);
         while (!raffle.isEmpty()) {
-            toyRaffle.add(raffle.poll());
+            toyRaffle.add(0, raffle.poll());
         }
         System.out.println("Розыгрыш проведен успешно");
         FileIO.writeFile(toyRaffle, path);
@@ -60,38 +56,10 @@ public class ToyService {
 
     public Toy createdToy(String toysString) {
         String[] splitString = toysString.split(" ");
-        String name = splitString[1].replace(",", "");
-        int frequencyOfLoss = parseFrequencyOfLoss(splitString);
-        return new Toy(name, frequencyOfLoss);
-    }
-
-    private int parseCount(String[] someString) {
-        int number = 0;
-        boolean flag = false;
-        do {
-            try {
-                number = Integer.parseInt(someString[0]);
-                flag = true;
-            } catch (NumberFormatException e) {
-                System.out.println(e.getMessage());
-            }
-        } while (!flag);
-        return number;
-    }
-
-    private int parseFrequencyOfLoss(String[] someString) {
-        boolean flag = false;
-        int number = 0;
-        do {
-            try {
-                number = Integer.parseInt(someString[someString.length - 1]);
-                flag = true;
-            } catch (NumberFormatException e) {
-                System.err.println(e.getMessage());
-
-            }
-        } while (!flag);
-        return number;
+        String id = splitString[1];
+        String name = splitString[2].replace(",", "");
+        String frequencyOfLoss = splitString[splitString.length - 1];
+        return new Toy(id, name, frequencyOfLoss);
     }
 
     private boolean isSize(String[] someString) {
