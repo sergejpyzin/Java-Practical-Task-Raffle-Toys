@@ -32,11 +32,11 @@ public class ToyService {
                     'количество игрушек, наименование, шанс выпадения в процентах'
                     Пример: 1, конструктор, 20""");
             String[] splitString = userAnswer.split(" ");
-            int count = Integer.parseInt(splitString[0]);
+            int count = userInteraction.checkStringParseInt(splitString, 0);
             for (int i = 0; i < count; i++) {
                 if (isSize(splitString)) {
                     nameArray.add(splitString[1].replace(",", ""));
-                    frequencyOfLossArray.add(Integer.parseInt(splitString[2]));
+                    frequencyOfLossArray.add(userInteraction.checkStringParseInt(splitString, 2));
                     size--;
                 } else {
                     System.out.println("Внимание! Ошибка формата ввода. ");
