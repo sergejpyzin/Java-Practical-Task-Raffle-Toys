@@ -1,3 +1,6 @@
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -8,8 +11,8 @@ public class UserInterface {
 
     private static void menuApp(String pathForRaffleFile, String pathRaffleFile) {
         ToyService toyService = new ToyService();
-//        Scanner scanner = new Scanner(System.in);
         String answer;
+        String[] correctAnswer = {"1", "2", "3", "4", "да", "нет"};
         do {
             System.out.println("""
                     Здравствуйте, Вас приветствует программа для розыгрыша игрушек.
@@ -19,13 +22,14 @@ public class UserInterface {
                     Результаты розыгрыша можно вывести на экран и сохранить в текстовом файле.
                     =================================
                     Введите 1 для добавления игрушки в список для розыгрыша;
-                    Введите 2 для проведения розыгрыша;
-                    Введите 3 для выхода из программы.
+                    Введите 2 для проведения розыгрыша всех игрушек;
+                    Введите 3 для розыгрыша одной игрушки из списка
+                    Введите 4 для выхода из программы.
                     =================================""");
-            answer = userInteraction.checkingUserAnswerFromEmpty("Введите номер меню");
-            if (!answer.equals("1") && !answer.equals("2") && !answer.equals("3")) {
-                System.out.println("Введен некорректный номер меню! Попробуйте еще раз");
-                answer = userInteraction.checkingUserAnswerFromEmpty("Введите номер меню");
+            answer = userInteraction.checkingUserAnswerFromEmpty("Введите номер меню:");
+            if (!Arrays.asList(correctAnswer).contains(answer)) {
+
+                answer = userInteraction.checkingUserAnswerFromEmpty("Некорректный ввод. Введите номер меню:");
             }
             if (answer.equals("1")) {
                 toyService.toyService(pathForRaffleFile);
@@ -38,7 +42,7 @@ public class UserInterface {
                             ===================================================""");
                     toyService.toyService(pathForRaffleFile);
                 } else {
-                    toyService.raffle(toysForRaffle, pathRaffleFile);
+                    toyService.raffleAllToys(toysForRaffle, pathRaffleFile);
                 }
                 do {
                     answer = userInteraction.checkingUserAnswerFromEmpty("Вывести результаты розыгрыша в консоль? Да/Нет");
@@ -49,13 +53,15 @@ public class UserInterface {
                         toyService.showToys(FileIO.readFile(pathRaffleFile));
                     } else if (answer.equalsIgnoreCase("нет")) {
                         break;
-                    } else {
-                        System.out.println("Некорректный ввод. Попробуйте ещё раз.");
                     }
                 } while (!answer.equalsIgnoreCase("да") && !answer.equalsIgnoreCase("нет"));
 
             }
-        } while (!answer.equals("3"));
+            if (answer.equals("3")) {
+                List<Toy> toysForRaffle = FileIO.readFile(pathForRaffleFile);
+                toyService.printRaffleToy(toysForRaffle);
+            }
+        } while (!answer.equals("4"));
         System.out.println("Спасибо за использование нашей программы. До свидания.");
         System.exit(0);
     }

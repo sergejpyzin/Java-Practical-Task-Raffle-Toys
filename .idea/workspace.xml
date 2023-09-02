@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="deleted GetRandom.java">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed ToyService as added createPriorityQueue method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputToys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputToys.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00026" summary="changed UserInteraction as deleted isNotEmptyAnswerUser method">
-      <created>1693223692354</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1693223692354</updated>
     </task>
     <task id="LOCAL-00027" summary="changed UserInteraction as deleted isNotEmptyAnswerUser method">
       <created>1693223713412</created>
@@ -413,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693684955748</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="changed ToyService as added createPriorityQueue method">
+      <created>1693686291915</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1693686291915</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed UserInterface as created runApp method" />
     <MESSAGE value="changed ToyService as changed toysList and raffle methods" />
     <MESSAGE value="changed ToyService as changed toysList method" />
     <MESSAGE value="changed UserInterface.java as changed runApp method" />
@@ -453,6 +455,7 @@
     <MESSAGE value="changed ToyService as changed toyService" />
     <MESSAGE value="changed UserInteraction as changed checkStringParseToInt and rectification problem  toyService in ToyService.java" />
     <MESSAGE value="deleted GetRandom.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted GetRandom.java" />
+    <MESSAGE value="changed ToyService as added createPriorityQueue method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed ToyService as added createPriorityQueue method" />
   </component>
 </project>
