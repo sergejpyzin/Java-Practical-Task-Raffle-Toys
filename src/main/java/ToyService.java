@@ -49,40 +49,20 @@ public class ToyService {
         FileIO.writeFile(toys, pathWrite);
     }
 
-    public void raffle(List<Toy> toysList, String path) {
-        List<Toy> toyRaffle = new ArrayList<>();
+    public void raffleAllToys (List<Toy> toysList, String path) {
+        List<Toy> toyRaffle = createPriorityQueue(toysList);
         List<Toy> resultRaffle = new ArrayList<>();
-        PriorityQueue<Toy> raffle = new PriorityQueue<>(toysList);
-        while (!raffle.isEmpty()) {
-            toyRaffle.add(createdToy(String.valueOf(raffle.poll())));
-        }
-        System.out.println(toyRaffle);
         while (!toyRaffle.isEmpty()) {
-            double totalWeight = 0.0d;
-            for (Toy toy : toyRaffle) {
-                totalWeight += toy.getFrequencyOfLoss();
-            }
-            int randomIndex = -1;
-            double random = Math.random() * totalWeight;
-            for (int i = 0; i < toyRaffle.size(); ++i) {
-                int toyWeight = toyRaffle.get(i).getFrequencyOfLoss();
-                random -= toyWeight;
-                if (random <= 0.0d) {
-                    randomIndex = i;
-                    break;
-                }
-            }
-            Toy RandomToy = toyRaffle.get(randomIndex);
-            resultRaffle.add(RandomToy);
-            toyRaffle.remove(toyRaffle.get(randomIndex));
+            int index = randomToyIndex(toyRaffle);
+            resultRaffle.add(toyRaffle.get(index));
+            toyRaffle.remove(toyRaffle.get(index));
         }
         System.out.println("Розыгрыш проведен успешно");
         FileIO.writeFile(resultRaffle, path);
     }
 
-    public Toy randomToy(List<Toy> toysList) {
+    public int randomToyIndex(List<Toy> toysList) {
         List<Toy> toyRaffle = createPriorityQueue(toysList);
-        Toy randomToy = null;
         double totalWeight = 0.0d;
         for (Toy toy : toyRaffle) {
             totalWeight += toy.getFrequencyOfLoss();
@@ -97,8 +77,7 @@ public class ToyService {
                 break;
             }
         }
-        randomToy = toyRaffle.get(randomIndex);
-        return randomToy;
+        return randomIndex;
     }
 
     public Toy createdToy(String toysString) {
@@ -120,6 +99,10 @@ public class ToyService {
             priorityList.add(createdToy(String.valueOf(raffle.poll())));
         }
         return priorityList;
+    }
+
+    public void printRaffleToy (List<Toy> toysList){
+        System.out.println(toysList.get(randomToyIndex(toysList)));
     }
 
 

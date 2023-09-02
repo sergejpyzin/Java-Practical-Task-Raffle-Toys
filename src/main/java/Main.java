@@ -50,9 +50,11 @@ public class Main {
         }*/
 //        Collections.sort(toys);
         ToyService toyService = new ToyService();
-        List<Toy> result = FileIO.readFile("result.txt");
+        List<Toy> result = FileIO.readFile("inputToys.txt");
 //        System.out.println(result);
-        System.out.println(toyService.randomToy(result));
+        /*toyService.raffleAllToys(result, "result.txt");
+        toyService.randomToyIndex(result);*/
+        toyService.printRaffleToy(result);
 
 
 //        UserInterface.runApp();
