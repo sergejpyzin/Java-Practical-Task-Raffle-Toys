@@ -17,6 +17,16 @@ public class UserInteraction {
         return parseAnswer;
     }
 
+    protected int checkStringParseInt(String[] someString, int index) {
+        int parseString = 0;
+        try {
+            parseString = Integer.parseInt(someString[index]);
+        } catch (NumberFormatException e) {
+            System.out.println("Введенное значение не число!");
+        }
+        return parseString;
+    }
+
 
     protected String checkingUserAnswerFromEmpty(String massage) {
         Scanner scanner = new Scanner(System.in);
