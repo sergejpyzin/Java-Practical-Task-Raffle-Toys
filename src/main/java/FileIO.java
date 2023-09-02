@@ -10,7 +10,11 @@ public class FileIO {
 
     public static void writeFile(List<Toy> toyList, String pathFile){
         try {
-            FileWriter fileWriter = new FileWriter(pathFile);
+            File file = new File(pathFile);
+            if (file.createNewFile()){
+                System.out.println("Файл создан");
+            }
+            FileWriter fileWriter = new FileWriter(file);
             for (Toy toy:toyList) {
                 fileWriter.write(toy.toString() + "\n");
             }
@@ -26,7 +30,7 @@ public class FileIO {
         List<Toy> toyList = new ArrayList<>();
         ToyService toyService = new ToyService();
         File file = new File(path);
-        String toy = "";
+        String toy;
         try(Scanner scanner = new Scanner(file, StandardCharsets.UTF_8)){
             while (scanner.hasNextLine()){
                 toy = scanner.nextLine();

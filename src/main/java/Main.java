@@ -14,8 +14,8 @@ public class Main {
         toys.add(new Toy("Four", 0.22));
         toys.add(new Toy("Five", 0.66));*/
 
-        UserInterface userInterface = new UserInterface();
-        userInterface.runApp("testTwo.txt", "test.txt");
+
+        UserInterface.runApp();
 
 
 
