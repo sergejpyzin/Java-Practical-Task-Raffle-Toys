@@ -1,15 +1,15 @@
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class UserInterface {
-    UserInteraction interaction = new UserInteraction();
-    ToyService toyService = new ToyService();
 
-    public  void menuApp(String pathRead, String pathWrite) {
+    static UserInteraction userInteraction = new UserInteraction();
+
+
+    private static void menuApp(String pathForRaffleFile, String pathRaffleFile) {
+        ToyService toyService = new ToyService();
         Scanner scanner = new Scanner(System.in);
-        String answer = "";
-        List<Toy> toys = null;
+        String answer;
         do {
             System.out.println("""
                     Здравствуйте, Вас приветствует программа для розыгрыша игрушек.
@@ -25,21 +25,26 @@ public class UserInterface {
                     Введите номер меню:""");
             answer = scanner.next();
             if (answer.equals("1")){
-                toyService.toyService(pathWrite);
+                toyService.toyService(pathForRaffleFile);
             }
             if (answer.equals("2")){
-                List<Toy> toysForRaffle = FileIO.readFile(pathRead);
+                List<Toy> toysForRaffle = FileIO.readFile(pathForRaffleFile);
                 if (toysForRaffle.isEmpty()){
                     System.out.println("""
-                            Список игрушек для розыгрыша игрушек пуст. Внесите хотя бы одну игрушку.
+                            Список игрушек для розыгрыша пуст. Внесите хотя бы одну игрушку.
                             ===================================================""");
-                    toyService.toyService(pathWrite);
+                    toyService.toyService(pathForRaffleFile);
                 }else{
-                    toyService.raffle(toysForRaffle, pathWrite);
+                    toyService.raffle(toysForRaffle, pathRaffleFile);
                 }
             }
         }while (!answer.equals("3"));
-
-
     }
+
+    public static void runApp(){
+        String pathForRaffleFile = userInteraction.checkingUserAnswerFromEmpty("Введите имя файла для сохранения списка игрушек:");
+        String pathRaffleFile = userInteraction.checkingUserAnswerFromEmpty("Введите имя файла для сохранения результатов розыгрыша игрушек:");
+        menuApp(pathForRaffleFile, pathRaffleFile);
+    }
+
 }
