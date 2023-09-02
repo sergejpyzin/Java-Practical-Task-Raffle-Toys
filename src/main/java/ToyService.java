@@ -19,23 +19,28 @@ public class ToyService {
 
     public void toyService(String pathWrite) {
         List<Toy> toys = new ArrayList<>();
-        List<String> idArray = new ArrayList<>();
+        List<Integer> idArray = new ArrayList<>();
         List<String> nameArray = new ArrayList<>();
-        List<String> frequencyOfLossArray = new ArrayList<>();
+        List<Integer> frequencyOfLossArray = new ArrayList<>();
         int size = userInteraction.checkingUserAnswerForInt("Введите количество игрушек для розыгрыша:");
+        for (int i = 0; i < size; i++) {
+            idArray.add(i);
+        }
         while (size > 0) {
             String userAnswer = userInteraction.checkingUserAnswerFromEmpty("""
-                    Введите игрушки для розыграша в формате:
-                    'id игрушки, наименование, шанс выпадения в процентах'
-                    Пример: 1, конструктор, 30""");
+                    Введите игрушки для розыгрыша в формате:
+                    'количество игрушек, наименование, шанс выпадения в процентах'
+                    Пример: 1, конструктор, 20""");
             String[] splitString = userAnswer.split(" ");
-            if (isSize(splitString)) {
-                idArray.add(splitString[0]);
-                nameArray.add(splitString[1].replace(",", ""));
-                frequencyOfLossArray.add(splitString[2]);
-                size--;
-            } else {
-                System.out.println("Внимание! Ошибка формата ввода. ");
+            int count = Integer.parseInt(splitString[0]);
+            for (int i = 0; i < count; i++) {
+                if (isSize(splitString)) {
+                    nameArray.add(splitString[1].replace(",", ""));
+                    frequencyOfLossArray.add(Integer.parseInt(splitString[2]));
+                    size--;
+                } else {
+                    System.out.println("Внимание! Ошибка формата ввода. ");
+                }
             }
         }
         for (int i = 0; i < idArray.size(); i++) {
@@ -55,12 +60,12 @@ public class ToyService {
         while (!toyRaffle.isEmpty()) {
             double totalWeight = 0.0d;
             for (Toy toy : toyRaffle) {
-                totalWeight += Integer.parseInt(toy.getFrequencyOfLoss());
+                totalWeight +=toy.getFrequencyOfLoss();
             }
             int randomIndex = -1;
             double random = Math.random() * totalWeight;
             for (int i = 0; i < toyRaffle.size(); ++i) {
-                int toyWeight = Integer.parseInt(toyRaffle.get(i).getFrequencyOfLoss());
+                int toyWeight = toyRaffle.get(i).getFrequencyOfLoss();
                 random -= toyWeight;
                 if (random <= 0.0d) {
                     randomIndex = i;
@@ -77,9 +82,9 @@ public class ToyService {
 
     public Toy createdToy(String toysString) {
         String[] splitString = toysString.split(" ");
-        String id = splitString[1];
+        int id = Integer.parseInt(splitString[1]);
         String name = splitString[4].replace(",", "");
-        String frequencyOfLoss = splitString[splitString.length - 1];
+        int frequencyOfLoss = Integer.parseInt(splitString[splitString.length - 1]);
         return new Toy(id, name, frequencyOfLoss);
     }
 
