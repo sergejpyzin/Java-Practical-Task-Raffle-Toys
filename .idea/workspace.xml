@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInterface as changed menuApp" />
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInteraction as deleted answerIsEmpty method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GetRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,20 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00014" summary="changed UserInteraction as added checkingUserAnswerForInt, checkingUserAnswerForDouble, isNotEmpty  methods">
-      <created>1693151940837</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1693151940837</updated>
-    </task>
-    <task id="LOCAL-00015" summary="changed UserInteraction as deleted isNotEmpty method">
-      <created>1693205597278</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1693205597278</updated>
     </task>
     <task id="LOCAL-00016" summary="changed FileIO as crated is writeFile method">
       <created>1693207136428</created>
@@ -408,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693671914786</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="changed UserInteraction as added answerIsEmpty method">
+      <created>1693672734161</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1693672734161</updated>
+    </task>
+    <task id="LOCAL-00064" summary="changed UserInteraction as deleted answerIsEmpty method">
+      <created>1693673551260</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1693673551260</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,8 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed ToyService as changed parseInt method" />
-    <MESSAGE value="changed Toy as changed compareTo method" />
     <MESSAGE value="changed ToyService as changed toyShow method" />
     <MESSAGE value="changed FileIO as changed writeFile method" />
     <MESSAGE value="changed ToyService as created raffle method" />
@@ -448,6 +452,8 @@
     <MESSAGE value="changed Toy as rectification problem" />
     <MESSAGE value="changed ToyService as changed toyService and createdToy methods" />
     <MESSAGE value="changed UserInterface as changed menuApp" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed UserInterface as changed menuApp" />
+    <MESSAGE value="changed UserInteraction as added answerIsEmpty method" />
+    <MESSAGE value="changed UserInteraction as deleted answerIsEmpty method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed UserInteraction as deleted answerIsEmpty method" />
   </component>
 </project>
