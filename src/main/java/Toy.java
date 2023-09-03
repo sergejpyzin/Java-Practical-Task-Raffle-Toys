@@ -12,9 +12,9 @@ public class Toy implements Comparable<Toy>{
 
     /**
      * Метод создания экземпляра класса Toy
-     * @param id - первый параметр типа Integer
-     * @param name - второй параметр типа String
-     * @param frequencyOfLoss - третий параметр типа Integer
+     * @param id - целочисленное значение поля id
+     * @param name - строковое значение поля name
+     * @param frequencyOfLoss - целочисленное значение поля frequencyOfLoss
      * */
     public Toy(Integer id, String name, Integer frequencyOfLoss) {
         this.id = id;

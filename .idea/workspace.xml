@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="rectification problem in all class">
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="added comment in Toy.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputToys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputToys.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultRaffle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resultRaffle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileIO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -70,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00034" summary="changed ToyService as changed toysList method">
-      <created>1693295773356</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1693295773356</updated>
     </task>
     <task id="LOCAL-00035" summary="changed Toy as changed compareTo method">
       <created>1693379095122</created>
@@ -414,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693690669416</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="added comment in Toy.java">
+      <created>1693692342887</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1693692342887</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -429,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed UserInterface as renamed runApp to menuApp" />
     <MESSAGE value="changed ToyService as added argument pathWrite and changed UserInterface as rectification problem" />
     <MESSAGE value="changed UserInteraction as protected method" />
     <MESSAGE value="changed UserInterface as added String path" />
@@ -454,6 +455,7 @@
     <MESSAGE value="changed UserInteraction as deleted checkingAnswer method" />
     <MESSAGE value="changed UserInterface as changed menuApp method" />
     <MESSAGE value="rectification problem in all class" />
-    <option name="LAST_COMMIT_MESSAGE" value="rectification problem in all class" />
+    <MESSAGE value="added comment in Toy.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comment in Toy.java" />
   </component>
 </project>

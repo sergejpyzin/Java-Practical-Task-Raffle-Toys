@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class UserInteraction {
 
+    /**
+     * Метод преобразования полученного строкового значения в целочисленное.
+     * Возвращает целочисленное значение
+     * @param massage - сообщение для пользователя
+     * */
     protected int checkingUserAnswerForInt(String massage) {
         boolean flag = false;
         int parseAnswer = 0;
@@ -17,6 +22,12 @@ public class UserInteraction {
         return parseAnswer;
     }
 
+    /**
+     * Метод преобразования элемента массива строк в целочисленное значение.
+     * Возвращает целочисленное значение.
+     * @param someString - массив строк
+     * @param index - индекс элемента массива строк
+     * */
     protected int checkStringParseToInt(String[] someString, int index) {
         int parseStringToInt = 0;
         try {
@@ -27,7 +38,11 @@ public class UserInteraction {
         return parseStringToInt;
     }
 
-
+    /**
+     * Метод проверки ответа от пользователя на содержание.
+     * Возвращает полученный ответ от пользователя.
+     * @param massage - сообщение для пользователя
+     * */
     protected String checkingUserAnswerFromEmpty(String massage) {
         Scanner scanner = new Scanner(System.in);
         String userAnswer = null;

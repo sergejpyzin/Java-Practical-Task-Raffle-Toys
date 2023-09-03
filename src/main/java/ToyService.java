@@ -7,7 +7,9 @@ public class ToyService {
 
     UserInteraction userInteraction = new UserInteraction();
 
-
+    /**
+     * Метод вывода на печать параметризованного списка экземпляров класса Toy
+     * @param toyList - параметризованный список экземпляров класса Toy*/
     public void showToys(List<Toy> toyList) {
         if (toyList.isEmpty()) {
             System.out.println("Список игрушек пуст");
@@ -17,6 +19,12 @@ public class ToyService {
 
     }
 
+    /**
+     * Метод создания параметризованного списка экземпляров класса Toy.
+     * Запрашивает информация у пользователя, на основе полученных данных создает параметризованный список
+     * и записывает его в файл
+     * @param pathWrite  - строковое значение месторасположения файла, в который будет производиться запись
+     * */
     public void toyService(String pathWrite) {
         List<Toy> toys = new ArrayList<>();
         List<Integer> idArray = new ArrayList<>();
@@ -49,6 +57,13 @@ public class ToyService {
         FileIO.writeFile(toys, pathWrite);
     }
 
+    /**
+     * Метод создания параметризованного списка экземпляров класса Toy.
+     * Из полученного параметризованного списка экземпляров класса Toy создается параметризованный список,
+     * на основании случайного распределения элементов полученного списка.
+     * @param toysList - параметризованный список экземпляров класса Toy
+     * @param path  - строковое значение месторасположения файла, в который будет производиться запись
+     * */
     public void raffleAllToys (List<Toy> toysList, String path) {
         List<Toy> toyRaffle = createPriorityQueue(toysList);
         List<Toy> resultRaffle = new ArrayList<>();
@@ -61,6 +76,11 @@ public class ToyService {
         FileIO.writeFile(resultRaffle, path);
     }
 
+    /**
+     * Метод случайного распределения экземпляров параметризованного списка экземпляров класса Toy.
+     * Возвращает индекс случайного экземпляра параметризованного списка
+     * @param toysList - параметризованный список экземпляров класса Toy
+     * */
     public int randomToyIndex(List<Toy> toysList) {
         List<Toy> toyRaffle = createPriorityQueue(toysList);
         double totalWeight = 0.0d;
@@ -80,6 +100,11 @@ public class ToyService {
         return randomIndex;
     }
 
+    /**
+     * Метод создания экземпляра класса Toy из входящей строки.
+     * Возвращает экземпляр класса Toy.
+     * @param toysString - входящая строка
+     * */
     public Toy createdToy(String toysString) {
         String[] splitString = toysString.split(" ");
         int id = Integer.parseInt(splitString[1]);
@@ -88,10 +113,11 @@ public class ToyService {
         return new Toy(id, name, frequencyOfLoss);
     }
 
-    private boolean isSize(String[] someString) {
-        return someString.length == 3;
-    }
-
+    /**
+     * Метод создания упорядоченного параметризованного списка экземпляров класса Toy.
+     * Возвращает упорядоченный параметризованный список
+     * @param someList - параметризованный список экземпляров класса Toy
+     * */
     private List<Toy> createPriorityQueue(List<Toy> someList) {
         List<Toy> priorityList = new ArrayList<>();
         PriorityQueue<Toy> raffle = new PriorityQueue<>(someList);
@@ -101,9 +127,20 @@ public class ToyService {
         return priorityList;
     }
 
+    /**
+     * Метод вывода на печать рандомизированного экземпляра класса Toy.
+     * @param toysList - параметризованный список экземпляров класса Toy
+     * */
     public void printRaffleToy (List<Toy> toysList){
         System.out.println(toysList.get(randomToyIndex(toysList)));
     }
 
+    /**
+     * Метод проверки длинны массива строк.
+     * @param someString - массив строк
+     * */
+    private boolean isSize(String[] someString) {
+        return someString.length == 3;
+    }
 
 }

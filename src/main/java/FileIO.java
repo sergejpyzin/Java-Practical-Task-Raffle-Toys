@@ -7,7 +7,11 @@ import java.util.Scanner;
 public class FileIO {
 
 
-
+    /**
+    * Статический метод записи параметризованного списка экземпляров класса Toy в файл
+    * @param toyList - параметризованный список экземпляров класса Toy
+     * @param pathFile - строковое значение месторасположения файла, в который будет производиться запись
+     * */
     public static void writeFile(List<Toy> toyList, String pathFile){
         try {
             File file = new File(pathFile);
@@ -26,6 +30,11 @@ public class FileIO {
 
     }
 
+    /**
+     * Статический метод построчного чтения информации из текстового файла и преобразования полученной информации в
+     * параметризованный список экземпляров класса Toy.
+     * Метод возвращает параметризованный список экземпляров класса Toy
+     * @param path - строковое значение месторасположения файла, из которого будет производиться чтение*/
     public static List<Toy> readFile(String path){
         List<Toy> toyList = new ArrayList<>();
         ToyService toyService = new ToyService();
