@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="added comment in Toy.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ToyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="01f86cf4-d9cb-4911-97a6-6fbe47a7df14" name="Changes" comment="changed UserInterface as changed runApp method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,20 +65,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692087195035</updated>
-    </task>
-    <task id="LOCAL-00035" summary="changed Toy as changed compareTo method">
-      <created>1693379095122</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1693379095123</updated>
-    </task>
-    <task id="LOCAL-00036" summary="changed ToyService as changed toysList method">
-      <created>1693464642686</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1693464642686</updated>
     </task>
     <task id="LOCAL-00037" summary="changed ToyService as changed toyShow method">
       <created>1693465782675</created>
@@ -416,7 +395,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693692342887</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="added comment in all class">
+      <created>1693716305859</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1693716305859</updated>
+    </task>
+    <task id="LOCAL-00085" summary="changed UserInterface as changed runApp method">
+      <created>1693716345247</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1693716345247</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,8 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed ToyService as added argument pathWrite and changed UserInterface as rectification problem" />
-    <MESSAGE value="changed UserInteraction as protected method" />
     <MESSAGE value="changed UserInterface as added String path" />
     <MESSAGE value="changed FileIO as changed all methods" />
     <MESSAGE value="changed Toy as changed Double frequencyOfLoss to String and constructor" />
@@ -456,6 +447,8 @@
     <MESSAGE value="changed UserInterface as changed menuApp method" />
     <MESSAGE value="rectification problem in all class" />
     <MESSAGE value="added comment in Toy.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comment in Toy.java" />
+    <MESSAGE value="added comment in all class" />
+    <MESSAGE value="changed UserInterface as changed runApp method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed UserInterface as changed runApp method" />
   </component>
 </project>

@@ -90,9 +90,9 @@ public class UserInterface {
             pathRaffleFile = "resultRaffle.txt";
         } else {
             pathForRaffleFile = userInteraction.checkingUserAnswerFromEmpty(
-                    "Введите имя файла для сохранения списка игрушек:");
+                    "Введите имя файла для сохранения списка игрушек, в формате имя_файла.txt:");
             pathRaffleFile = userInteraction.checkingUserAnswerFromEmpty(
-                    "Введите имя файла для сохранения результатов розыгрыша игрушек:");
+                    "Введите имя файла для сохранения результатов розыгрыша игрушек, в формате имя_файла.txt:");
 
         }
         menuApp(pathForRaffleFile, pathRaffleFile);
