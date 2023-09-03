@@ -5,7 +5,13 @@ public class UserInterface {
 
     static UserInteraction userInteraction = new UserInteraction();
 
-
+    /**
+     * Статический метод основного меню программы.
+     * Выводит основное меню программы, в виде сообщения для пользователя. На основании ответа от пользователя
+     * запускает выполнение функционала программы.
+     * @param pathForRaffleFile - строковое значение месторасположения файла, в который будет производиться запись
+     * @param pathRaffleFile - строковое значение месторасположения файла, из которого будет производиться чтение
+     * */
     private static void menuApp(String pathForRaffleFile, String pathRaffleFile) {
         ToyService toyService = new ToyService();
         String answer;
@@ -66,11 +72,29 @@ public class UserInterface {
         System.exit(0);
     }
 
+    /**
+     * Статический метод запуска программы.
+     * Запрашивает у пользователя месторасположение необходимых файлов для чтения и записи информации.
+     * */
     public static void runApp() {
-        /*String pathForRaffleFile = userInteraction.checkingUserAnswerFromEmpty("Введите имя файла для сохранения списка игрушек:");
-        String pathRaffleFile = userInteraction.checkingUserAnswerFromEmpty("Введите имя файла для сохранения результатов розыгрыша игрушек:");*/
-        String pathForRaffleFile = "inputToys.txt";
-        String pathRaffleFile = "resultRaffle.txt";
+        String[] correctAnswer = {"да", "нет"};
+        String pathForRaffleFile;
+        String pathRaffleFile;
+        String answer = userInteraction.checkingUserAnswerFromEmpty("""
+                Вы хотите использовать файлы для чтения и записи по-умолчанию? Да/Нет:""");
+        if (!Arrays.asList(correctAnswer).contains(answer)){
+            answer = userInteraction.checkingUserAnswerFromEmpty("Некорректный ввод. Введите Да или Нет");
+        }
+        if (answer.equalsIgnoreCase("да")){
+            pathForRaffleFile = "inputToys.txt";
+            pathRaffleFile = "resultRaffle.txt";
+        } else {
+            pathForRaffleFile = userInteraction.checkingUserAnswerFromEmpty(
+                    "Введите имя файла для сохранения списка игрушек:");
+            pathRaffleFile = userInteraction.checkingUserAnswerFromEmpty(
+                    "Введите имя файла для сохранения результатов розыгрыша игрушек:");
+
+        }
         menuApp(pathForRaffleFile, pathRaffleFile);
     }
 
